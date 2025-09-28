@@ -54,7 +54,7 @@ export const Music: React.FC = () => {
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="w-full h-auto object-cover transition-all duration-500 group-hover:scale-110 lg:w-auto lg:h-auto"
+                  className="w-full h-auto object-cover transition-all duration-500 group-hover:scale-110 lg:w-auto lg:h-auto brightness-0"
                   style={{ 
                     aspectRatio: image.aspectRatio.replace('aspect-', '').replace('[', '').replace(']', ''),
                     maxWidth: image.width.replace('w-', '').replace('[', '').replace(']', '').replace('px', '') + 'px'
