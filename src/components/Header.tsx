@@ -36,12 +36,13 @@ export const Header: React.FC<HeaderProps> = ({ activeSection = 'About' }) => {
             <a
               key={item.name}
               href={item.href}
-              className={`px-3 sm:px-4 py-2 sm:py-3 rounded-lg text-sm sm:text-base font-medium transition-all duration-300 relative overflow-hidden group ${
+              className={`px-3 sm:px-4 py-2 sm:py-3 rounded-lg text-sm sm:text-base font-medium transition-all duration-300 relative overflow-hidden group focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 ${
                 activeSection === item.name
                   ? 'bg-accent text-accent-foreground shadow-sm'
                   : 'text-muted-foreground hover:text-secondary hover:bg-accent/30'
               }`}
               aria-current={activeSection === item.name ? 'page' : undefined}
+              role="link"
             >
               <span className="relative z-10">{item.name}</span>
               {activeSection !== item.name && (

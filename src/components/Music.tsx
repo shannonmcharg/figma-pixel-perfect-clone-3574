@@ -47,8 +47,10 @@ export const Music: React.FC = () => {
           {musicImages.map((image, index) => (
             <div 
               key={index} 
-              className="group cursor-pointer transform transition-all duration-300 hover:scale-105 flex-shrink-0 w-32 sm:w-40 lg:w-auto"
+              className="group cursor-pointer transform transition-all duration-300 hover:scale-105 flex-shrink-0 w-32 sm:w-40 lg:w-auto focus-within:outline-none focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2 rounded-xl"
               style={{ animationDelay: `${index * 100}ms` }}
+              role="img"
+              aria-label={`Music platform icon ${index + 1}`}
             >
               <div className="relative overflow-hidden rounded-xl transition-all duration-300">
                 <img

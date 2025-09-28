@@ -56,8 +56,9 @@ export const Footer: React.FC = () => {
                 <a
                   key={index}
                   href={link.href}
-                  className="p-2 sm:p-3 rounded-full bg-accent/30 hover:bg-accent transition-all duration-300 hover:scale-110 group"
+                  className="p-2 sm:p-3 rounded-full bg-accent/30 hover:bg-accent transition-all duration-300 hover:scale-110 group focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
                   aria-label={`Follow Shannon on ${link.alt}`}
+                  role="link"
                 >
                   <img
                     src={link.src}
