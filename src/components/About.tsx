@@ -2,27 +2,27 @@ import React from 'react';
 
 export const About: React.FC = () => {
   return (
-    <section id="about" className="py-20 px-6 max-md:px-5 animate-slide-up" aria-labelledby="about-heading">
-      <div className="flex justify-between items-start gap-16 flex-wrap max-w-7xl mx-auto">
-        <div className="min-w-60 max-w-[628px] flex-1 group">
+    <section id="about" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-6 animate-slide-up" aria-labelledby="about-heading">
+      <div className="flex flex-col lg:flex-row justify-between items-start gap-8 sm:gap-12 lg:gap-16 max-w-7xl mx-auto">
+        <div className="w-full lg:w-auto lg:min-w-60 lg:max-w-[628px] lg:flex-1 group order-2 lg:order-1">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/0c27cf0c641e09de51f7e9b0a10eda870eec427d?placeholderIfAbsent=true"
             alt="Shannon McHarg performing with guitar"
-            className="w-full aspect-[0.75] object-cover rounded-2xl shadow-xl transition-all duration-500 group-hover:shadow-2xl group-hover:scale-[1.02]"
+            className="w-full max-w-md mx-auto lg:max-w-none lg:mx-0 aspect-[0.75] object-cover rounded-2xl shadow-xl transition-all duration-500 group-hover:shadow-2xl group-hover:scale-[1.02]"
           />
         </div>
         
-        <article className="min-w-60 max-w-[520px] flex-1 space-y-8">
+        <article className="w-full lg:w-auto lg:min-w-60 lg:max-w-[520px] lg:flex-1 space-y-6 sm:space-y-8 order-1 lg:order-2">
           <h2 
             id="about-heading"
-            className="text-secondary text-4xl md:text-5xl font-bold leading-tight tracking-tight mb-10 relative"
+            className="text-secondary text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight mb-6 sm:mb-8 lg:mb-10 relative text-center lg:text-left"
           >
             About
-            <div className="absolute -bottom-2 left-0 w-16 h-1 bg-primary rounded-full"></div>
+            <div className="absolute -bottom-2 left-1/2 lg:left-0 transform -translate-x-1/2 lg:translate-x-0 w-16 h-1 bg-primary rounded-full"></div>
           </h2>
           
-          <div className="text-foreground text-xl font-normal leading-relaxed tracking-normal space-y-6">
-            <p className="first-letter:text-4xl first-letter:font-bold first-letter:text-primary first-letter:mr-1 first-letter:float-left first-letter:leading-none">
+          <div className="text-foreground text-lg sm:text-xl font-normal leading-relaxed tracking-normal space-y-4 sm:space-y-6">
+            <p className="first-letter:text-3xl sm:first-letter:text-4xl first-letter:font-bold first-letter:text-primary first-letter:mr-1 first-letter:float-left first-letter:leading-none text-center lg:text-left">
               Shannon McHarg has been writing songs since 2016. Her first guitar
               teacher convinced her to attend an open mic that he ran. She enjoyed
               performing and playing covers to hone her skills. After a couple of
@@ -31,7 +31,7 @@ export const About: React.FC = () => {
               shift in open mic format was a catalyst to dive head first into
               songwriting.
             </p>
-            <p className="text-lg italic text-muted-foreground border-l-4 border-primary pl-6">
+            <p className="text-base sm:text-lg italic text-muted-foreground border-l-4 border-primary pl-4 sm:pl-6 text-center lg:text-left">
               Shannon writes quirky, punky, observational songs about
               social issues, politics, and holidays.
             </p>

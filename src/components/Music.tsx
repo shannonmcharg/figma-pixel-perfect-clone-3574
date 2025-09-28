@@ -31,30 +31,34 @@ export const Music: React.FC = () => {
   return (
     <section 
       id="music" 
-      className="bg-muted py-24 px-6 max-md:px-5"
+      className="bg-muted py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-6"
       aria-labelledby="music-heading"
     >
       <div className="max-w-7xl mx-auto">
         <h2 
           id="music-heading"
-          className="text-secondary text-4xl md:text-5xl font-bold leading-tight tracking-tight mb-16 relative"
+          className="text-secondary text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight mb-8 sm:mb-12 lg:mb-16 relative text-center lg:text-left"
         >
           Music
-          <div className="absolute -bottom-4 left-0 w-16 h-1 bg-primary rounded-full"></div>
+          <div className="absolute -bottom-4 left-1/2 lg:left-0 transform -translate-x-1/2 lg:translate-x-0 w-16 h-1 bg-primary rounded-full"></div>
         </h2>
         
-        <div className="flex items-center justify-center gap-8 flex-wrap max-w-6xl mx-auto">
+        <div className="flex items-center justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8 flex-wrap max-w-6xl mx-auto lg:mx-0">
           {musicImages.map((image, index) => (
             <div 
               key={index} 
-              className="group cursor-pointer transform transition-all duration-300 hover:scale-105 flex-shrink-0"
+              className="group cursor-pointer transform transition-all duration-300 hover:scale-105 flex-shrink-0 w-32 sm:w-40 lg:w-auto"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="relative overflow-hidden rounded-xl shadow-lg group-hover:shadow-2xl transition-all duration-300">
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className={`${image.aspectRatio} ${image.width} object-cover transition-transform duration-500 group-hover:scale-110`}
+                  className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110 lg:w-auto lg:h-auto"
+                  style={{ 
+                    aspectRatio: image.aspectRatio.replace('aspect-', '').replace('[', '').replace(']', ''),
+                    maxWidth: image.width.replace('w-', '').replace('[', '').replace(']', '').replace('px', '') + 'px'
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>

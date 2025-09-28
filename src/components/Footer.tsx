@@ -40,23 +40,23 @@ export const Footer: React.FC = () => {
       className="border-t border-border bg-background"
       aria-labelledby="connect-heading"
     >
-      <div className="max-w-7xl mx-auto flex justify-between items-center gap-16 flex-wrap px-8 py-16 max-md:px-5">
-        <div className="flex-1 min-w-60 max-w-[600px] space-y-10">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-8 sm:gap-12 lg:gap-16 px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        <div className="flex-1 w-full lg:min-w-60 lg:max-w-[600px] space-y-6 sm:space-y-8 lg:space-y-10 text-center lg:text-left">
           <h2 
             id="connect-heading"
-            className="text-secondary text-4xl md:text-5xl font-bold leading-tight tracking-tight relative"
+            className="text-secondary text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight relative"
           >
             Connect
-            <div className="absolute -bottom-2 left-0 w-16 h-1 bg-primary rounded-full"></div>
+            <div className="absolute -bottom-2 left-1/2 lg:left-0 transform -translate-x-1/2 lg:translate-x-0 w-16 h-1 bg-primary rounded-full"></div>
           </h2>
           
           <nav aria-label="Social media links">
-            <div className="flex items-center gap-6">
+            <div className="flex items-center justify-center lg:justify-start gap-4 sm:gap-6">
               {socialLinks.map((link, index) => (
                 <a
                   key={index}
                   href={link.href}
-                  className="p-3 rounded-full bg-accent/30 hover:bg-accent transition-all duration-300 hover:scale-110 group"
+                  className="p-2 sm:p-3 rounded-full bg-accent/30 hover:bg-accent transition-all duration-300 hover:scale-110 group"
                   aria-label={`Follow Shannon on ${link.alt}`}
                 >
                   <img
@@ -70,7 +70,7 @@ export const Footer: React.FC = () => {
             </div>
           </nav>
           
-          <p className="text-muted-foreground text-sm font-medium">
+          <p className="text-muted-foreground text-xs sm:text-sm font-medium">
             © 2025 Shannon McHarg all rights reserved.
           </p>
         </div>

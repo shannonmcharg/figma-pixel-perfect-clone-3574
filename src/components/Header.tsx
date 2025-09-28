@@ -13,30 +13,30 @@ export const Header: React.FC<HeaderProps> = ({ activeSection = 'About' }) => {
 
   return (
     <header className="border-b border-border bg-background/95 backdrop-blur-sm sticky top-0 z-50 animate-fade-in">
-      <div className="flex items-center justify-between flex-wrap gap-8 px-8 py-6 max-md:px-5 max-w-7xl mx-auto">
-        <div className="flex items-center gap-6">
+      <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8 px-4 sm:px-6 lg:px-8 py-4 lg:py-6 max-w-7xl mx-auto">
+        <div className="flex items-center gap-6 order-1 lg:order-1">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/7838730ce5458cf1337e438f6765a96bfd623ad6?placeholderIfAbsent=true"
             alt="Shannon McHarg Logo"
-            className="w-[51px] h-[51px] object-contain transition-transform duration-300 hover:scale-110"
+            className="w-12 h-12 lg:w-[51px] lg:h-[51px] object-contain transition-transform duration-300 hover:scale-110"
           />
         </div>
         
-        <div className="flex-1 min-w-[332px] text-center md:text-left">
-          <h1 className="text-primary text-4xl md:text-[32px] font-bold leading-tight tracking-tight">
+        <div className="flex-1 min-w-0 text-center lg:text-left order-2 lg:order-2">
+          <h1 className="text-primary text-2xl sm:text-3xl lg:text-4xl xl:text-[32px] font-bold leading-tight tracking-tight">
             Shannon McHarg{' '}
-            <span className="text-secondary text-lg md:text-base font-medium block md:inline">
+            <span className="text-secondary text-sm sm:text-base lg:text-lg xl:text-base font-medium block sm:inline">
               Songwriter
             </span>
           </h1>
         </div>
 
-        <nav className="flex items-center gap-1 min-w-60" aria-label="Main navigation">
+        <nav className="flex items-center justify-center lg:justify-end gap-1 w-full lg:w-auto order-3 lg:order-3" aria-label="Main navigation">
           {navigationItems.map((item) => (
             <a
               key={item.name}
               href={item.href}
-              className={`px-4 py-3 rounded-lg text-base font-medium transition-all duration-300 relative overflow-hidden group ${
+              className={`px-3 sm:px-4 py-2 sm:py-3 rounded-lg text-sm sm:text-base font-medium transition-all duration-300 relative overflow-hidden group ${
                 activeSection === item.name
                   ? 'bg-accent text-accent-foreground shadow-sm'
                   : 'text-muted-foreground hover:text-secondary hover:bg-accent/30'
