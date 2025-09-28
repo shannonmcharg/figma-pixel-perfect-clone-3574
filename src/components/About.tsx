@@ -7,7 +7,7 @@ export const About: React.FC = () => {
         <div className="w-full lg:w-auto lg:min-w-60 lg:max-w-[628px] lg:flex-1 group order-2 lg:order-1">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/0c27cf0c641e09de51f7e9b0a10eda870eec427d?placeholderIfAbsent=true"
-            alt="Shannon McHarg performing with guitar"
+            alt="Sketchy image of Shannon McHarg playing guitar at an open mic"
             className="w-full max-w-md mx-auto lg:max-w-none lg:mx-0 aspect-[0.75] object-cover rounded-2xl shadow-xl transition-all duration-500 group-hover:shadow-2xl group-hover:scale-[1.02]"
           />
         </div>

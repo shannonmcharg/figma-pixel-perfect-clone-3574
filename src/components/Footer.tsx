@@ -79,7 +79,7 @@ export const Footer: React.FC = () => {
         <div className="shrink-0">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/189d3e6f08298e0870d596e418d28690da7e04cc?placeholderIfAbsent=true"
-            alt="Shannon McHarg signature logo"
+            alt="Logo showing sketchy guitar tuners with an inscription of Shannon McHarg on the guitar head"
             className="w-[126px] h-[126px] object-contain"
           />
         </div>
