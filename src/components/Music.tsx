@@ -50,17 +50,16 @@ export const Music: React.FC = () => {
               className="group cursor-pointer transform transition-all duration-300 hover:scale-105 flex-shrink-0 w-32 sm:w-40 lg:w-auto"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="relative overflow-hidden rounded-xl shadow-lg group-hover:shadow-2xl transition-all duration-300">
+              <div className="relative overflow-hidden rounded-xl transition-all duration-300">
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110 lg:w-auto lg:h-auto"
+                  className="w-full h-auto object-cover transition-all duration-500 group-hover:scale-110 lg:w-auto lg:h-auto grayscale hover:grayscale-0"
                   style={{ 
                     aspectRatio: image.aspectRatio.replace('aspect-', '').replace('[', '').replace(']', ''),
                     maxWidth: image.width.replace('w-', '').replace('[', '').replace(']', '').replace('px', '') + 'px'
                   }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
             </div>
           ))}
