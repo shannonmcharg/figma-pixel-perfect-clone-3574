@@ -36,6 +36,7 @@ export const Header: React.FC<HeaderProps> = ({ activeSection = 'About' }) => {
             <a
               key={item.name}
               href={item.href}
+              tabIndex={0}
               className={`px-3 sm:px-4 py-2 sm:py-3 rounded-lg text-sm sm:text-base font-medium transition-all duration-300 relative overflow-hidden group focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 ${
                 activeSection === item.name
                   ? 'bg-accent text-accent-foreground shadow-sm'

@@ -45,12 +45,16 @@ export const Music: React.FC = () => {
         
         <div className="flex items-center justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8 flex-wrap">
           {musicImages.map((image, index) => (
-            <div 
+            <button 
               key={index} 
-              className="group cursor-pointer transform transition-all duration-300 hover:scale-105 flex-shrink-0 w-32 sm:w-40 lg:w-auto focus-within:outline-none focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2 rounded-xl"
+              className="group cursor-pointer transform transition-all duration-300 hover:scale-105 flex-shrink-0 w-32 sm:w-40 lg:w-auto focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 rounded-xl bg-transparent border-none p-0"
               style={{ animationDelay: `${index * 100}ms` }}
-              role="img"
-              aria-label={`Music platform icon ${index + 1}`}
+              tabIndex={0}
+              aria-label={`Visit Shannon McHarg on ${image.alt}`}
+              onClick={() => {
+                // Add click handler for music platforms
+                console.log(`Clicked on ${image.alt}`);
+              }}
             >
               <div className="relative overflow-hidden rounded-xl transition-all duration-300">
                 <img
@@ -63,7 +67,7 @@ export const Music: React.FC = () => {
                   }}
                 />
               </div>
-            </div>
+            </button>
           ))}
         </div>
       </div>
