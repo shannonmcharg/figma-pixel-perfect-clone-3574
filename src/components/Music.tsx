@@ -43,7 +43,7 @@ export const Music: React.FC = () => {
           <div className="absolute -bottom-4 left-1/2 lg:left-0 transform -translate-x-1/2 lg:translate-x-0 w-16 h-1 bg-primary rounded-full"></div>
         </h2>
         
-        <div className="flex items-center justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8 flex-wrap max-w-6xl mx-auto lg:mx-0">
+        <div className="flex items-center justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8 flex-wrap">
           {musicImages.map((image, index) => (
             <div 
               key={index} 
