@@ -37,10 +37,10 @@ export const Footer: React.FC = () => {
   return (
     <footer 
       id="connect"
-      className="border-t border-border bg-background"
+      className="border-t border-border bg-background px-4 sm:px-6 lg:px-8"
       aria-labelledby="connect-heading"
     >
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-8 sm:gap-12 lg:gap-16 px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-8 sm:gap-12 lg:gap-16 py-12 sm:py-16">
         <div className="flex-1 w-full lg:min-w-60 lg:max-w-[600px] space-y-6 sm:space-y-8 lg:space-y-10 text-center lg:text-left">
           <h2 
             id="connect-heading"
