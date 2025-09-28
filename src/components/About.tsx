@@ -3,7 +3,7 @@ import React from 'react';
 export const About: React.FC = () => {
   return (
     <section id="about" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-6 animate-slide-up" aria-labelledby="about-heading">
-      <div className="flex flex-col lg:flex-row justify-between items-start gap-8 sm:gap-12 lg:gap-16 max-w-7xl mx-auto">
+      <div className="flex flex-col lg:flex-row justify-between items-start gap-6 sm:gap-8 lg:gap-10 max-w-7xl mx-auto">
         <div className="w-full lg:w-auto lg:min-w-60 lg:max-w-[628px] lg:flex-1 group order-2 lg:order-1">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/0c27cf0c641e09de51f7e9b0a10eda870eec427d?placeholderIfAbsent=true"
