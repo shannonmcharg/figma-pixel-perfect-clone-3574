@@ -31,12 +31,12 @@ export const Music: React.FC = () => {
   return (
     <section 
       id="music" 
-      className="bg-[rgba(10,81,118,0.09)] py-16 px-14 max-md:px-5"
+      className="bg-muted py-16 px-14 max-md:px-5"
       aria-labelledby="music-heading"
     >
       <h2 
         id="music-heading"
-        className="text-[#0A5176] text-[32px] font-bold leading-[1.2] tracking-[-0.96px] mb-7"
+        className="text-secondary text-[32px] font-bold leading-[1.2] tracking-[-0.96px] mb-7"
       >
         Music
       </h2>

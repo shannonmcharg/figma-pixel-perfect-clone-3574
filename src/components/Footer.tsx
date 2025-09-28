@@ -37,14 +37,14 @@ export const Footer: React.FC = () => {
   return (
     <footer 
       id="connect"
-      className="border-t border-[#FBE5D1] bg-white"
+      className="border-t border-border bg-background"
       aria-labelledby="connect-heading"
     >
       <div className="flex justify-between items-center gap-10 flex-wrap px-12 py-5 max-md:px-5">
         <div className="flex-1 min-w-60 max-w-[838px] pr-20 pb-2 max-md:pr-0">
           <h2 
             id="connect-heading"
-            className="text-[#0A5176] text-[32px] font-bold leading-[1.2] tracking-[-0.96px] mb-7"
+            className="text-secondary text-[32px] font-bold leading-[1.2] tracking-[-0.96px] mb-7"
           >
             Connect
           </h2>
@@ -69,7 +69,7 @@ export const Footer: React.FC = () => {
             </div>
           </nav>
           
-          <p className="text-black text-base font-normal leading-[1.2] tracking-[-0.48px]">
+          <p className="text-foreground text-base font-normal leading-[1.2] tracking-[-0.48px]">
             © 2025 Shannon McHarg all rights reserved.
           </p>
         </div>

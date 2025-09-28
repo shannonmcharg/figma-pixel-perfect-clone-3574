@@ -12,7 +12,7 @@ export const Header: React.FC<HeaderProps> = ({ activeSection = 'About' }) => {
   ];
 
   return (
-    <header className="border-b border-gray-200 bg-white">
+    <header className="border-b border-border bg-background">
       <div className="flex items-center justify-between flex-wrap gap-6 px-8 py-8 max-md:px-5">
         <div className="flex items-center gap-6">
           <img
@@ -23,9 +23,9 @@ export const Header: React.FC<HeaderProps> = ({ activeSection = 'About' }) => {
         </div>
         
         <div className="flex-1 min-w-[332px]">
-          <h1 className="text-[#BD4D24] text-[32px] font-bold leading-[1.2] tracking-[-0.96px]">
+          <h1 className="text-primary text-[32px] font-bold leading-[1.2] tracking-[-0.96px]">
             Shannon McHarg{' '}
-            <span className="text-[#0A5176] text-base font-normal">
+            <span className="text-secondary text-base font-normal">
               Songwriter
             </span>
           </h1>
@@ -38,8 +38,8 @@ export const Header: React.FC<HeaderProps> = ({ activeSection = 'About' }) => {
               href={item.href}
               className={`px-2 py-2 rounded text-base font-normal leading-none transition-colors ${
                 activeSection === item.name
-                  ? 'bg-blue-100 text-blue-800'
-                  : 'text-gray-700 hover:bg-gray-100'
+                  ? 'bg-accent text-accent-foreground'
+                  : 'text-muted-foreground hover:bg-accent/50'
               }`}
               aria-current={activeSection === item.name ? 'page' : undefined}
             >

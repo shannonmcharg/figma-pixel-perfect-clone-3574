@@ -15,12 +15,12 @@ export const About: React.FC = () => {
         <article className="min-w-60 max-w-[460px] flex-1">
           <h2 
             id="about-heading"
-            className="text-[#0A5176] text-[32px] font-bold leading-[1.2] tracking-[-0.96px] mb-8"
+            className="text-secondary text-[32px] font-bold leading-[1.2] tracking-[-0.96px] mb-8"
           >
             About
           </h2>
           
-          <div className="text-[#1E1E1E] text-xl font-normal leading-6 tracking-[-0.6px]">
+          <div className="text-foreground text-xl font-normal leading-6 tracking-[-0.6px]">
             <p>
               Shannon McHarg has been writing songs since 2016. Her first guitar
               teacher convinced her to attend an open mic that he ran. She enjoyed
