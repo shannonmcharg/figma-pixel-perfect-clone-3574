@@ -37,10 +37,10 @@ export const Music: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <h2 
           id="music-heading"
-          className="text-secondary text-4xl md:text-5xl font-bold leading-tight tracking-tight mb-16 text-center relative"
+          className="text-secondary text-4xl md:text-5xl font-bold leading-tight tracking-tight mb-16 relative"
         >
           Music
-          <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-primary rounded-full"></div>
+          <div className="absolute -bottom-4 left-0 w-16 h-1 bg-primary rounded-full"></div>
         </h2>
         
         <div className="flex items-center justify-center gap-8 flex-wrap max-w-6xl mx-auto">
