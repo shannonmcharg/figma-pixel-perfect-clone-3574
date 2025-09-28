@@ -24,8 +24,8 @@ export const Header: React.FC<HeaderProps> = ({ activeSection = 'About' }) => {
         
         <div className="flex-1 min-w-0 text-center lg:text-left order-2 lg:order-2">
           <h1 className="text-primary text-2xl sm:text-3xl lg:text-4xl xl:text-[32px] font-bold leading-tight tracking-tight">
-            Shannon McHarg{' '}
-            <span className="text-secondary text-sm sm:text-base lg:text-lg xl:text-base font-medium block sm:inline">
+            Shannon McHarg
+            <span className="text-secondary text-sm sm:text-base lg:text-lg xl:text-base font-medium block">
               Songwriter
             </span>
           </h1>
