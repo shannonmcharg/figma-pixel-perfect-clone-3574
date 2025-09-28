@@ -6,9 +6,9 @@ import { Footer } from '@/components/Footer';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-white overflow-hidden">
+    <div className="min-h-screen bg-background overflow-hidden">
       <Header activeSection="About" />
-      <main>
+      <main className="space-y-0">
         <About />
         <Music />
       </main>

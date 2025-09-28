@@ -31,26 +31,36 @@ export const Music: React.FC = () => {
   return (
     <section 
       id="music" 
-      className="bg-muted py-16 px-14 max-md:px-5"
+      className="bg-muted py-24 px-6 max-md:px-5"
       aria-labelledby="music-heading"
     >
-      <h2 
-        id="music-heading"
-        className="text-secondary text-[32px] font-bold leading-[1.2] tracking-[-0.96px] mb-7"
-      >
-        Music
-      </h2>
-      
-      <div className="flex items-stretch justify-between gap-5 flex-wrap max-w-[1042px]">
-        {musicImages.map((image, index) => (
-          <div key={index} className="shrink-0">
-            <img
-              src={image.src}
-              alt={image.alt}
-              className={`${image.aspectRatio} ${image.width} object-contain max-w-full hover:opacity-80 transition-opacity cursor-pointer`}
-            />
-          </div>
-        ))}
+      <div className="max-w-7xl mx-auto">
+        <h2 
+          id="music-heading"
+          className="text-secondary text-4xl md:text-5xl font-bold leading-tight tracking-tight mb-16 text-center relative"
+        >
+          Music
+          <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-primary rounded-full"></div>
+        </h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          {musicImages.map((image, index) => (
+            <div 
+              key={index} 
+              className="group cursor-pointer transform transition-all duration-300 hover:scale-105"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
+              <div className="relative overflow-hidden rounded-xl shadow-lg group-hover:shadow-2xl transition-all duration-300">
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
