@@ -43,18 +43,18 @@ export const Music: React.FC = () => {
           <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-primary rounded-full"></div>
         </h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        <div className="flex items-center justify-center gap-8 flex-wrap max-w-6xl mx-auto">
           {musicImages.map((image, index) => (
             <div 
               key={index} 
-              className="group cursor-pointer transform transition-all duration-300 hover:scale-105"
+              className="group cursor-pointer transform transition-all duration-300 hover:scale-105 flex-shrink-0"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="relative overflow-hidden rounded-xl shadow-lg group-hover:shadow-2xl transition-all duration-300">
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110"
+                  className={`${image.aspectRatio} ${image.width} object-cover transition-transform duration-500 group-hover:scale-110`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
