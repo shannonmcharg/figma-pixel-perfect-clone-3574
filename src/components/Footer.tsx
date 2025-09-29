@@ -25,12 +25,6 @@ export const Footer: React.FC = () => {
       alt: "Facebook",
       href: "#facebook", 
       className: "w-[25px] h-[25px]"
-    },
-    {
-      src: "https://api.builder.io/api/v1/image/assets/TEMP/2679f721154c017c87bad1f03274fe82d5614e1b?placeholderIfAbsent=true",
-      alt: "YouTube",
-      href: "#youtube",
-      className: "w-6 h-[18px]"
     }
   ];
 
