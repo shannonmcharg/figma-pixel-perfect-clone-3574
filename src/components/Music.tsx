@@ -47,7 +47,7 @@ export const Music: React.FC = () => {
           {musicImages.map((image, index) => (
             <button 
               key={index} 
-              className="group cursor-pointer transform transition-all duration-300 hover:scale-105 flex-shrink-0 w-32 sm:w-40 lg:w-auto focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 rounded-xl bg-transparent border-none p-0"
+              className="group cursor-pointer flex-shrink-0 w-32 sm:w-40 lg:w-auto focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 rounded-xl bg-transparent border-none p-0"
               style={{ animationDelay: `${index * 100}ms` }}
               tabIndex={0}
               aria-label={`Visit Shannon McHarg on ${image.alt}`}
@@ -56,11 +56,11 @@ export const Music: React.FC = () => {
                 console.log(`Clicked on ${image.alt}`);
               }}
             >
-              <div className="relative overflow-hidden rounded-xl transition-all duration-300">
+              <div className="relative overflow-hidden rounded-xl">
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="w-full h-auto object-cover transition-all duration-500 group-hover:scale-110 lg:w-auto lg:h-auto"
+                  className="w-full h-auto object-cover lg:w-auto lg:h-auto"
                   style={{ 
                     aspectRatio: image.aspectRatio.replace('aspect-', '').replace('[', '').replace(']', ''),
                     maxWidth: image.width.replace('w-', '').replace('[', '').replace(']', '').replace('px', '') + 'px'
