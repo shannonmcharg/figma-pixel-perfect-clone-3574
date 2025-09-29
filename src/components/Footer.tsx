@@ -5,7 +5,7 @@ export const Footer: React.FC = () => {
     {
       src: "https://api.builder.io/api/v1/image/assets/TEMP/a21a4a86570f9f064e8dd8b720171af437391f9c?placeholderIfAbsent=true", 
       alt: "Bluesky",
-      href: "#bluesky",
+      href: "https://bsky.app/profile/shannonmchargsongs.bsky.social",
       className: "w-7 h-6"
     },
     {
