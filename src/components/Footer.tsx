@@ -11,7 +11,7 @@ export const Footer: React.FC = () => {
     {
       src: "https://api.builder.io/api/v1/image/assets/TEMP/de92c4b0cf657c343fd805205fc6bc6a90761783?placeholderIfAbsent=true",
       alt: "Instagram",
-      href: "#instagram",
+      href: "https://www.instagram.com/shannonmchargsongs/",
       className: "w-6 h-6"
     },
     {
