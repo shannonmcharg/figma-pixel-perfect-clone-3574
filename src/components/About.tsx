@@ -8,21 +8,21 @@ export const About: React.FC = () => {
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/0c27cf0c641e09de51f7e9b0a10eda870eec427d?placeholderIfAbsent=true"
             alt="Sketchy image of Shannon McHarg playing guitar at an open mic"
-            className="w-full max-w-md mx-auto lg:max-w-none lg:mx-0 aspect-[0.75] object-cover rounded-2xl shadow-xl"
+            className="w-full max-w-md lg:max-w-none lg:mx-0 aspect-[0.75] object-cover rounded-2xl shadow-xl"
           />
         </div>
         
         <article className="w-full lg:w-auto lg:min-w-60 lg:max-w-[520px] lg:flex-1 space-y-6 sm:space-y-8 order-1 lg:order-2">
           <h2 
             id="about-heading"
-            className="text-secondary text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight mb-6 sm:mb-8 lg:mb-10 relative text-center lg:text-left"
+            className="text-secondary text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight mb-6 sm:mb-8 lg:mb-10 relative text-left"
           >
             About
-            <div className="absolute -bottom-2 left-1/2 lg:left-0 transform -translate-x-1/2 lg:translate-x-0 w-16 h-1 bg-primary rounded-full"></div>
+            <div className="absolute -bottom-2 left-0 w-16 h-1 bg-primary rounded-full"></div>
           </h2>
           
           <div className="text-foreground text-lg sm:text-xl font-normal leading-relaxed tracking-normal space-y-4 sm:space-y-6">
-            <p className="text-center lg:text-left">
+            <p className="text-left">
               Shannon McHarg has been writing songs since 2016. Her first guitar
               teacher convinced her to attend an open mic that he ran. She enjoyed
               performing and playing covers to hone her skills. After a couple of
@@ -31,16 +31,16 @@ export const About: React.FC = () => {
               shift in open mic format was a catalyst to dive head first into
               songwriting.
             </p>
-            <p className="text-base sm:text-lg italic text-muted-foreground border-l-4 border-primary pl-4 sm:pl-6 text-center lg:text-left">
+            <p className="text-base sm:text-lg italic text-muted-foreground border-l-4 border-primary pl-4 sm:pl-6 text-left">
               Shannon writes quirky, punky, observational songs about
               social issues, politics, and holidays.
             </p>
             
             <div className="mt-8 sm:mt-10">
-              <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-center lg:text-left">
+              <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">
                 Influences
               </h3>
-              <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
+              <div className="flex flex-wrap gap-2 justify-start">
                 {['Ani DiFranco', 'Billy Bragg', 'Brandi Carlile', 'Butch Walker', 'Cake', 'The Clash', 'Daniel Johnston', 'Elvis Costello', 'Jill Sobule', 'Kacey Musgraves', 'Liz Phair', 'Margaret Glaspy', 'Patti Smith', 'Pete Yorn', 'PJ Harvey', 'The Replacements', 'Sam Phillips', 'Siouxsie and the Banshees', 'Whim', 'XTC'].map((influence) => (
                   <span
                     key={influence}
