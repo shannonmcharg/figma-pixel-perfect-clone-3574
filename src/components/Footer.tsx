@@ -17,7 +17,7 @@ export const Footer: React.FC = () => {
     {
       src: "https://api.builder.io/api/v1/image/assets/TEMP/7c7882428c644b092335250bd4a53dfd25e3453a?placeholderIfAbsent=true",
       alt: "TikTok", 
-      href: "#tiktok",
+      href: "https://www.tiktok.com/@shannonmchargsongs",
       className: "w-6 h-6"
     },
     {
