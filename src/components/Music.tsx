@@ -4,7 +4,7 @@ export const Music: React.FC = () => {
   const musicImages = [
     {
       src: "https://api.builder.io/api/v1/image/assets/TEMP/44321cf19157501330e82958763daee7ebe1a954?placeholderIfAbsent=true",
-      alt: "Apple Music platform logo",
+      alt: "Bandcamp platform logo",
       aspectRatio: "aspect-[3.18]",
       width: "w-[204px]"
     },
@@ -16,7 +16,7 @@ export const Music: React.FC = () => {
     },
     {
       src: "https://api.builder.io/api/v1/image/assets/TEMP/aec7c2ab6451a33191f8637a15edf07b2ead3853?placeholderIfAbsent=true",
-      alt: "Bandcamp music platform logo",
+      alt: "Apple Music platform logo",
       aspectRatio: "aspect-[4.61]", 
       width: "w-[295px]"
     },
