@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
     },
     {
       src: "https://api.builder.io/api/v1/image/assets/TEMP/a21a4a86570f9f064e8dd8b720171af437391f9c?placeholderIfAbsent=true", 
-      alt: "Bluewky",
+      alt: "Bluesky",
       href: "#bluesky",
       className: "w-7 h-6"
     },
