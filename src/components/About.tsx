@@ -8,7 +8,7 @@ export const About: React.FC = () => {
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/0c27cf0c641e09de51f7e9b0a10eda870eec427d?placeholderIfAbsent=true"
             alt="Sketchy image of Shannon McHarg playing guitar at an open mic"
-            className="w-full max-w-md lg:max-w-none lg:mx-0 aspect-[0.75] object-cover rounded-2xl shadow-xl"
+            className="w-full max-w-md mx-auto lg:max-w-none lg:mx-0 aspect-[0.75] object-cover rounded-2xl shadow-xl"
           />
         </div>
         
