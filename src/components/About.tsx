@@ -22,7 +22,7 @@ export const About: React.FC = () => {
           </h2>
           
           <div className="text-foreground text-lg sm:text-xl font-normal leading-relaxed tracking-normal space-y-4 sm:space-y-6">
-            <p className="first-letter:text-3xl sm:first-letter:text-4xl first-letter:font-bold first-letter:text-primary first-letter:mr-1 first-letter:float-left first-letter:leading-none text-center lg:text-left">
+            <p className="text-center lg:text-left">
               Shannon McHarg has been writing songs since 2016. Her first guitar
               teacher convinced her to attend an open mic that he ran. She enjoyed
               performing and playing covers to hone her skills. After a couple of
