@@ -18,7 +18,7 @@ export const Header: React.FC<HeaderProps> = ({ activeSection = 'About' }) => {
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/7838730ce5458cf1337e438f6765a96bfd623ad6?placeholderIfAbsent=true"
             alt="Logo showing sketchy guitar tuners with an inscription of Shannon McHarg on the guitar head"
-            className="w-16 h-16 lg:w-20 lg:h-20 object-contain transition-transform duration-300 hover:scale-110"
+            className="w-16 h-16 lg:w-20 lg:h-20 object-contain object-left -ml-2 sm:-ml-3 lg:-ml-4 transition-transform duration-300 hover:scale-110"
           />
         </div>
         
