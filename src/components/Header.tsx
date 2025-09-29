@@ -12,8 +12,8 @@ export const Header: React.FC<HeaderProps> = ({ activeSection = 'About' }) => {
   ];
 
   return (
-    <header className="border-b border-border bg-background/95 backdrop-blur-sm sticky top-0 z-50 animate-fade-in">
-      <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6 lg:gap-8 px-4 sm:px-6 lg:px-6 py-4 lg:py-6 max-w-7xl mx-auto">
+    <header className="border-b border-border bg-background/95 backdrop-blur-sm sticky top-0 z-50 animate-fade-in px-4 sm:px-6 lg:px-8">
+      <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6 lg:gap-8 py-4 lg:py-6 max-w-7xl mx-auto">
         <div className="flex items-center gap-6 order-1 lg:order-1 lg:self-start">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/7838730ce5458cf1337e438f6765a96bfd623ad6?placeholderIfAbsent=true"
