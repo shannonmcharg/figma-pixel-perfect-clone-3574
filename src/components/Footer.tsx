@@ -23,7 +23,7 @@ export const Footer: React.FC = () => {
     {
       src: "https://api.builder.io/api/v1/image/assets/TEMP/f38b20d9602b2855e512dd211e924120bf18c9ef?placeholderIfAbsent=true",
       alt: "Facebook",
-      href: "#facebook", 
+      href: "https://www.facebook.com/shannonmchargsongs", 
       className: "w-[25px] h-[25px]"
     }
   ];
