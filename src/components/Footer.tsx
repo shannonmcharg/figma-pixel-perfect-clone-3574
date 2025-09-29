@@ -71,11 +71,11 @@ export const Footer: React.FC = () => {
           </p>
         </div>
         
-        <div className="shrink-0">
+        <div className="shrink-0 h-full flex items-center">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/189d3e6f08298e0870d596e418d28690da7e04cc?placeholderIfAbsent=true"
             alt="Logo showing sketchy guitar tuners with an inscription of Shannon McHarg on the guitar head"
-            className="w-[126px] h-[126px] object-contain"
+            className="h-full w-auto object-contain max-h-[200px] sm:max-h-[240px]"
           />
         </div>
       </div>
