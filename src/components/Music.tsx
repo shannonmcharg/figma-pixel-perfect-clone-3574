@@ -52,8 +52,9 @@ export const Music: React.FC = () => {
               tabIndex={0}
               aria-label={`Visit Shannon McHarg on ${image.alt}`}
               onClick={() => {
-                // Add click handler for music platforms
-                console.log(`Clicked on ${image.alt}`);
+                if (index === 0) {
+                  window.open('https://shannonmcharg.bandcamp.com', '_blank', 'noopener,noreferrer');
+                }
               }}
             >
               <div className="relative overflow-hidden rounded-xl">
