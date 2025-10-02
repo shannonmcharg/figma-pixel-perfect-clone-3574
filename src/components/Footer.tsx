@@ -1,4 +1,5 @@
 import React from 'react';
+import { Mail } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   const socialLinks = [
@@ -46,6 +47,15 @@ export const Footer: React.FC = () => {
           
           <nav aria-label="Social media links">
             <div className="flex items-center justify-center lg:justify-start gap-4 sm:gap-6">
+              <a
+                href="mailto:shannonmchargsongwriter@gmail.com"
+                tabIndex={0}
+                className="p-2 sm:p-3 rounded-full bg-accent/30 hover:bg-accent transition-all duration-300 hover:scale-110 group focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+                aria-label="Email Shannon"
+                role="link"
+              >
+                <Mail className="w-6 h-6 text-foreground group-hover:scale-110 transition-transform duration-300" />
+              </a>
               {socialLinks.map((link, index) => (
                 <a
                   key={index}
