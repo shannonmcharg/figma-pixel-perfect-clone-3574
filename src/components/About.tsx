@@ -58,7 +58,7 @@ export const About: React.FC = () => {
               </h3>
               <div className="space-y-3">
                 <div className="text-left">
-                  <span className="font-semibold text-foreground">Jud Caswell:</span>
+                  <a href="https://judcaswell.com/" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-primary transition-colors">Jud Caswell:</a>
                   <span className="text-muted-foreground ml-2">Production and recording</span>
                 </div>
                 <div className="text-left">
