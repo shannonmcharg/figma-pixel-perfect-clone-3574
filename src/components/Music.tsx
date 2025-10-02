@@ -72,9 +72,8 @@ export const Music: React.FC = () => {
         </div>
 
         <div className="mt-16 sm:mt-20 lg:mt-24">
-          <h3 className="text-secondary text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight tracking-tight mb-8 sm:mb-10 relative text-center lg:text-left">
+          <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">
             Open Mics
-            <div className="absolute -bottom-3 left-1/2 lg:left-0 transform -translate-x-1/2 lg:translate-x-0 w-16 h-1 bg-primary rounded-full"></div>
           </h3>
           
           <div className="w-full overflow-hidden rounded-xl shadow-xl bg-background">
