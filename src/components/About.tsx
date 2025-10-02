@@ -62,7 +62,7 @@ export const About: React.FC = () => {
                   <span className="text-foreground ml-2">Production and recording</span>
                 </div>
                 <div className="text-left">
-                  <span className="font-semibold text-primary">Rexy Dinosaur:</span>
+                  <a href="https://www.facebook.com/CowboyRexyDinosaur" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:text-primary/80 transition-colors">Rexy Dinosaur:</a>
                   <span className="text-foreground ml-2">Bass and percussion</span>
                 </div>
                 <div className="text-left">
