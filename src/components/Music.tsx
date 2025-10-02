@@ -6,7 +6,7 @@ export const Music: React.FC = () => {
     alt: "Bandcamp platform logo",
     aspectRatio: "aspect-[3.18]",
     width: "w-[204px]",
-    url: "https://shannonmcharg.bandcamp.com"
+    url: "shannonmcharg.bandcamp.com"
   };
 
   const comingSoonPlatforms = [
