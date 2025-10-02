@@ -75,6 +75,9 @@ export const Music: React.FC = () => {
           <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">
             Open Mics
           </h3>
+          <p className="text-foreground text-base mb-4 text-left">
+            This is where you can see me play.
+          </p>
           
           <div className="w-full overflow-hidden rounded-xl shadow-xl bg-background">
             <iframe 
