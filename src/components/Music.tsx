@@ -45,6 +45,10 @@ export const Music: React.FC = () => {
           <div className="absolute -bottom-4 left-1/2 lg:left-0 transform -translate-x-1/2 lg:translate-x-0 w-16 h-1 bg-primary rounded-full"></div>
         </h2>
         
+        <div className="mb-8">
+          <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">
+            Available Now
+          </h3>
         <div className="flex items-center justify-center lg:justify-start mb-12">
           <button 
             className="group cursor-pointer flex-shrink-0 w-32 sm:w-40 lg:w-auto focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 rounded-xl bg-transparent border-none p-0"
@@ -66,6 +70,7 @@ export const Music: React.FC = () => {
               />
             </div>
           </button>
+        </div>
         </div>
 
         <div className="mb-8">
