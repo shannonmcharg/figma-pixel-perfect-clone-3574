@@ -51,6 +51,26 @@ export const About: React.FC = () => {
                 ))}
               </div>
             </div>
+            
+            <div className="mt-8 sm:mt-10">
+              <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">
+                Collaborators
+              </h3>
+              <div className="space-y-3">
+                <div className="text-left">
+                  <span className="font-semibold text-foreground">Jud Caswell:</span>
+                  <span className="text-muted-foreground ml-2">Production and recording</span>
+                </div>
+                <div className="text-left">
+                  <span className="font-semibold text-foreground">Rexy Dinosaur:</span>
+                  <span className="text-muted-foreground ml-2">Bass and percussion</span>
+                </div>
+                <div className="text-left">
+                  <span className="font-semibold text-foreground">Erin Chendar:</span>
+                  <span className="text-muted-foreground ml-2">Vocal coaching</span>
+                </div>
+              </div>
+            </div>
           </div>
         </article>
       </div>
