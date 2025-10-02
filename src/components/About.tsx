@@ -66,7 +66,7 @@ export const About: React.FC = () => {
                   <span className="text-foreground ml-2">Bass and percussion</span>
                 </div>
                 <div className="text-left">
-                  <span className="font-semibold text-primary">Erin Chendar:</span>
+                  <a href="https://chenardvoicestudio.com/" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:text-primary/80 transition-colors">Erin Chendar:</a>
                   <span className="text-foreground ml-2">Vocal coaching</span>
                 </div>
               </div>
