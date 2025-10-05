@@ -95,7 +95,7 @@ export const Footer: React.FC = () => {
           </nav>
           
           <p className="text-muted-foreground text-xs sm:text-sm font-medium">
-            © 2025 Shannon McHarg all rights reserved.
+            © 2025 Shannon McHarg. All rights reserved.
           </p>
         </div>
         
