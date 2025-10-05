@@ -1,15 +1,13 @@
 import React from 'react';
 
 export const Music: React.FC = () => {
-  const activePlatform = {
-    src: "https://api.builder.io/api/v1/image/assets/TEMP/44321cf19157501330e82958763daee7ebe1a954?placeholderIfAbsent=true",
-    alt: "Bandcamp platform logo",
-    aspectRatio: "aspect-[3.18]",
-    width: "w-[204px]",
-    url: "shannonmcharg.bandcamp.com"
-  };
-
   const comingSoonPlatforms = [
+    {
+      src: "https://api.builder.io/api/v1/image/assets/TEMP/44321cf19157501330e82958763daee7ebe1a954?placeholderIfAbsent=true",
+      alt: "Bandcamp platform logo",
+      aspectRatio: "aspect-[3.18]",
+      width: "w-[204px]"
+    },
     {
       src: "https://api.builder.io/api/v1/image/assets/TEMP/11c2e22f26f83eefc0b55c4824460c9962f09d96?placeholderIfAbsent=true",
       alt: "Spotify music streaming platform logo", 
@@ -45,34 +43,6 @@ export const Music: React.FC = () => {
           <div className="absolute -bottom-4 left-1/2 lg:left-0 transform -translate-x-1/2 lg:translate-x-0 w-16 h-1 bg-primary rounded-full"></div>
         </h2>
         
-        <div className="mb-8">
-          <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">
-            Available Now
-          </h3>
-        <div className="flex items-center justify-center lg:justify-start mb-12">
-          <button 
-            className="group cursor-pointer flex-shrink-0 w-32 sm:w-40 lg:w-auto focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 rounded-xl bg-transparent border-none p-0"
-            tabIndex={0}
-            aria-label={`Visit Shannon McHarg on ${activePlatform.alt}`}
-            onClick={() => {
-              window.open(`https://${activePlatform.url}`, '_blank', 'noopener,noreferrer');
-            }}
-          >
-            <div className="relative overflow-hidden rounded-xl">
-              <img
-                src={activePlatform.src}
-                alt={activePlatform.alt}
-                className="w-full h-auto object-cover lg:w-auto lg:h-auto"
-                style={{ 
-                  aspectRatio: activePlatform.aspectRatio.replace('aspect-', '').replace('[', '').replace(']', ''),
-                  maxWidth: activePlatform.width.replace('w-', '').replace('[', '').replace(']', '').replace('px', '') + 'px'
-                }}
-              />
-            </div>
-          </button>
-        </div>
-        </div>
-
         <div className="mb-8">
           <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">
             Coming Soon
