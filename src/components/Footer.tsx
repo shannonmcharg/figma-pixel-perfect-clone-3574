@@ -48,18 +48,6 @@ export const Footer: React.FC = () => {
           <nav aria-label="Social media links">
             <div className="flex items-center justify-center lg:justify-start gap-6 sm:gap-8">
               <a
-                href="mailto:shannonmchargsongwriter@gmail.com"
-                tabIndex={0}
-                className="flex flex-col items-center gap-2 group focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 rounded-lg"
-                aria-label="Email Shannon"
-                role="link"
-              >
-                <div className="p-2 sm:p-3 rounded-full bg-accent/30 hover:bg-accent transition-all duration-300 group-hover:scale-110">
-                  <Mail className="w-6 h-6 text-foreground group-hover:scale-110 transition-transform duration-300" />
-                </div>
-                <span className="text-xs text-muted-foreground group-hover:text-foreground transition-colors">Email Me</span>
-              </a>
-              <a
                 href="https://buttondown.com/shannonmchargsongs"
                 tabIndex={0}
                 className="flex flex-col items-center gap-2 group focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 rounded-lg"
@@ -91,6 +79,18 @@ export const Footer: React.FC = () => {
                   <span className="text-xs text-muted-foreground group-hover:text-foreground transition-colors">{link.alt}</span>
                 </a>
               ))}
+              <a
+                href="mailto:shannonmchargsongwriter@gmail.com"
+                tabIndex={0}
+                className="flex flex-col items-center gap-2 group focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 rounded-lg"
+                aria-label="Email Shannon"
+                role="link"
+              >
+                <div className="p-2 sm:p-3 rounded-full bg-accent/30 hover:bg-accent transition-all duration-300 group-hover:scale-110">
+                  <Mail className="w-6 h-6 text-foreground group-hover:scale-110 transition-transform duration-300" />
+                </div>
+                <span className="text-xs text-muted-foreground group-hover:text-foreground transition-colors">Email Me</span>
+              </a>
             </div>
           </nav>
           
