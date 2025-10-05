@@ -4,23 +4,27 @@ export const Music: React.FC = () => {
   const comingSoonPlatforms = [
     {
       src: "https://api.builder.io/api/v1/image/assets/TEMP/44321cf19157501330e82958763daee7ebe1a954?placeholderIfAbsent=true",
-      alt: "Bandcamp",
-      className: "w-24 h-24"
+      alt: "Bandcamp platform logo",
+      aspectRatio: "aspect-[3.18]",
+      width: "w-[204px]"
     },
     {
       src: "https://api.builder.io/api/v1/image/assets/TEMP/11c2e22f26f83eefc0b55c4824460c9962f09d96?placeholderIfAbsent=true",
-      alt: "Spotify",
-      className: "w-24 h-24"
+      alt: "Spotify music streaming platform logo", 
+      aspectRatio: "aspect-[3.06]",
+      width: "w-[196px]"
     },
     {
       src: "https://api.builder.io/api/v1/image/assets/TEMP/aec7c2ab6451a33191f8637a15edf07b2ead3853?placeholderIfAbsent=true",
-      alt: "Apple Music",
-      className: "w-24 h-24"
+      alt: "Apple Music platform logo",
+      aspectRatio: "aspect-[4.61]", 
+      width: "w-[295px]"
     },
     {
       src: "https://api.builder.io/api/v1/image/assets/TEMP/8f779beb511c99a6c61a5fc5ae3a42332b2cc49b?placeholderIfAbsent=true",
-      alt: "YouTube",
-      className: "w-24 h-24"
+      alt: "YouTube music platform logo",
+      aspectRatio: "aspect-[3.31]",
+      width: "w-[212px]"
     }
   ];
 
@@ -43,21 +47,23 @@ export const Music: React.FC = () => {
           <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">
             Coming Soon
           </h3>
-          <div className="flex items-center justify-center lg:justify-start gap-6 sm:gap-8 flex-wrap opacity-50">
+          <div className="flex items-center justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8 flex-wrap opacity-50">
             {comingSoonPlatforms.map((platform, index) => (
               <div 
                 key={index} 
-                className="flex flex-col items-center gap-2 group"
+                className="flex-shrink-0 w-32 sm:w-40 lg:w-auto"
               >
-                <div className="p-2 sm:p-3 rounded-full bg-accent/30">
+                <div className="relative overflow-hidden rounded-xl">
                   <img
                     src={platform.src}
-                    alt=""
-                    className={`${platform.className} object-contain`}
-                    role="presentation"
+                    alt={platform.alt}
+                    className="w-full h-auto object-cover lg:w-auto lg:h-auto"
+                    style={{ 
+                      aspectRatio: platform.aspectRatio.replace('aspect-', '').replace('[', '').replace(']', ''),
+                      maxWidth: platform.width.replace('w-', '').replace('[', '').replace(']', '').replace('px', '') + 'px'
+                    }}
                   />
                 </div>
-                <span className="text-xs text-muted-foreground">{platform.alt}</span>
               </div>
             ))}
           </div>
