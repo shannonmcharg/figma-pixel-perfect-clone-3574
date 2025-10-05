@@ -46,7 +46,7 @@ export const Footer: React.FC = () => {
           </h2>
           
           <nav aria-label="Social media links">
-            <div className="flex items-center justify-center lg:justify-start gap-6 sm:gap-8">
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 sm:gap-8">
               <a
                 href="https://buttondown.com/shannonmchargsongs"
                 tabIndex={0}
