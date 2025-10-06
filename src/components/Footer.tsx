@@ -22,6 +22,12 @@ export const Footer: React.FC = () => {
       className: "w-6 h-6"
     },
     {
+      src: "https://api.builder.io/api/v1/image/assets/TEMP/youtube-icon?placeholderIfAbsent=true",
+      alt: "YouTube",
+      href: "https://www.youtube.com/@shannonmchargsongs",
+      className: "w-6 h-6"
+    },
+    {
       src: "https://api.builder.io/api/v1/image/assets/TEMP/f38b20d9602b2855e512dd211e924120bf18c9ef?placeholderIfAbsent=true",
       alt: "Facebook",
       href: "https://www.facebook.com/shannonmchargsongs", 
