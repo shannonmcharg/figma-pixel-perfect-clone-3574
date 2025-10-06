@@ -20,12 +20,6 @@ export const Footer: React.FC = () => {
       alt: "TikTok", 
       href: "https://www.tiktok.com/@shannonmchargsongs",
       className: "w-6 h-6"
-    },
-    {
-      src: "https://api.builder.io/api/v1/image/assets/TEMP/f38b20d9602b2855e512dd211e924120bf18c9ef?placeholderIfAbsent=true",
-      alt: "Facebook",
-      href: "https://www.facebook.com/shannonmchargsongs", 
-      className: "w-[25px] h-[25px]"
     }
   ];
 
@@ -90,6 +84,23 @@ export const Footer: React.FC = () => {
                   <Youtube className="w-6 h-6 text-foreground group-hover:scale-110 transition-transform duration-300" />
                 </div>
                 <span className="text-xs text-muted-foreground group-hover:text-foreground transition-colors">YouTube</span>
+              </a>
+              <a
+                href="https://www.facebook.com/shannonmchargsongs"
+                tabIndex={0}
+                className="flex flex-col items-center gap-2 group focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 rounded-lg"
+                aria-label="Follow Shannon on Facebook"
+                role="link"
+              >
+                <div className="p-2 sm:p-3 rounded-full bg-accent/30 hover:bg-accent transition-all duration-300 group-hover:scale-110">
+                  <img
+                    src="https://api.builder.io/api/v1/image/assets/TEMP/f38b20d9602b2855e512dd211e924120bf18c9ef?placeholderIfAbsent=true"
+                    alt=""
+                    className="w-[25px] h-[25px] object-contain group-hover:scale-110 transition-transform duration-300"
+                    role="presentation"
+                  />
+                </div>
+                <span className="text-xs text-muted-foreground group-hover:text-foreground transition-colors">Facebook</span>
               </a>
               <a
                 href="mailto:shannonmchargsongwriter@gmail.com"
