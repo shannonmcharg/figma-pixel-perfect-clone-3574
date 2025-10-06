@@ -4,12 +4,6 @@ import { Mail, Newspaper, Youtube } from 'lucide-react';
 export const Footer: React.FC = () => {
   const socialLinks = [
     {
-      src: "https://api.builder.io/api/v1/image/assets/TEMP/a21a4a86570f9f064e8dd8b720171af437391f9c?placeholderIfAbsent=true", 
-      alt: "Bluesky",
-      href: "https://bsky.app/profile/shannonmchargsongs.bsky.social",
-      className: "w-7 h-6"
-    },
-    {
       src: "https://api.builder.io/api/v1/image/assets/TEMP/de92c4b0cf657c343fd805205fc6bc6a90761783?placeholderIfAbsent=true",
       alt: "Instagram",
       href: "https://www.instagram.com/shannonmchargsongs/",
@@ -84,6 +78,23 @@ export const Footer: React.FC = () => {
                   <Youtube className="w-6 h-6 text-foreground group-hover:scale-110 transition-transform duration-300" />
                 </div>
                 <span className="text-xs text-muted-foreground group-hover:text-foreground transition-colors">YouTube</span>
+              </a>
+              <a
+                href="https://bsky.app/profile/shannonmchargsongs.bsky.social"
+                tabIndex={0}
+                className="flex flex-col items-center gap-2 group focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 rounded-lg"
+                aria-label="Follow Shannon on Bluesky"
+                role="link"
+              >
+                <div className="p-2 sm:p-3 rounded-full bg-accent/30 hover:bg-accent transition-all duration-300 group-hover:scale-110">
+                  <img
+                    src="https://api.builder.io/api/v1/image/assets/TEMP/a21a4a86570f9f064e8dd8b720171af437391f9c?placeholderIfAbsent=true"
+                    alt=""
+                    className="w-7 h-6 object-contain group-hover:scale-110 transition-transform duration-300"
+                    role="presentation"
+                  />
+                </div>
+                <span className="text-xs text-muted-foreground group-hover:text-foreground transition-colors">Bluesky</span>
               </a>
               <a
                 href="https://www.facebook.com/shannonmchargsongs"
