@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Newspaper } from 'lucide-react';
+import { Mail, Newspaper, Youtube } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   const socialLinks = [
@@ -19,12 +19,6 @@ export const Footer: React.FC = () => {
       src: "https://api.builder.io/api/v1/image/assets/TEMP/7c7882428c644b092335250bd4a53dfd25e3453a?placeholderIfAbsent=true",
       alt: "TikTok", 
       href: "https://www.tiktok.com/@shannonmchargsongs",
-      className: "w-6 h-6"
-    },
-    {
-      src: "https://api.builder.io/api/v1/image/assets/TEMP/youtube-icon?placeholderIfAbsent=true",
-      alt: "YouTube",
-      href: "https://www.youtube.com/@shannonmchargsongs",
       className: "w-6 h-6"
     },
     {
@@ -85,6 +79,18 @@ export const Footer: React.FC = () => {
                   <span className="text-xs text-muted-foreground group-hover:text-foreground transition-colors">{link.alt}</span>
                 </a>
               ))}
+              <a
+                href="https://www.youtube.com/@shannonmchargsongs"
+                tabIndex={0}
+                className="flex flex-col items-center gap-2 group focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 rounded-lg"
+                aria-label="Follow Shannon on YouTube"
+                role="link"
+              >
+                <div className="p-2 sm:p-3 rounded-full bg-accent/30 hover:bg-accent transition-all duration-300 group-hover:scale-110">
+                  <Youtube className="w-6 h-6 text-foreground group-hover:scale-110 transition-transform duration-300" />
+                </div>
+                <span className="text-xs text-muted-foreground group-hover:text-foreground transition-colors">YouTube</span>
+              </a>
               <a
                 href="mailto:shannonmchargsongwriter@gmail.com"
                 tabIndex={0}
