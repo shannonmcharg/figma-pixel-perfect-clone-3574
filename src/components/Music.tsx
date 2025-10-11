@@ -62,10 +62,15 @@ export const Music: React.FC = () => {
           <div className="absolute -bottom-4 left-1/2 lg:left-0 transform -translate-x-1/2 lg:translate-x-0 w-16 h-1 bg-primary rounded-full"></div>
         </h2>
         
-        <div className="mb-8">
-          <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">
-            Available Now
+        <div className="mb-12">
+          <h3 className="text-secondary text-2xl sm:text-3xl font-semibold mb-6 text-left">
+            Online Platforms
           </h3>
+          
+          <div className="mb-8">
+          <h4 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">
+            Available Now
+          </h4>
           <div className="flex items-center justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8 flex-wrap">
             {availableNowPlatforms.map((platform, index) => (
               <a
@@ -89,10 +94,10 @@ export const Music: React.FC = () => {
           </div>
         </div>
 
-        <div className="mb-8">
-          <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">
-            Coming Soon
-          </h3>
+          <div className="mb-8">
+            <h4 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">
+              Coming Soon
+            </h4>
           <div className="flex items-center justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8 flex-wrap opacity-50">
             {comingSoonPlatforms.map((platform, index) => (
               <div 
@@ -112,6 +117,7 @@ export const Music: React.FC = () => {
                 </span>
               </div>
             ))}
+          </div>
           </div>
         </div>
 
