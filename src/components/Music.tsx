@@ -1,5 +1,6 @@
 import React from 'react';
 import bandcampLogo from '@/assets/bandcamp-logo.png';
+import spotifyLogo from '@/assets/spotify-logo.png';
 
 export const Music: React.FC = () => {
   const availableNowPlatforms = [
@@ -14,10 +15,10 @@ export const Music: React.FC = () => {
 
   const comingSoonPlatforms = [
     {
-      src: "https://api.builder.io/api/v1/image/assets/TEMP/11c2e22f26f83eefc0b55c4824460c9962f09d96?placeholderIfAbsent=true",
+      src: spotifyLogo,
       alt: "Spotify music streaming platform logo", 
-      aspectRatio: "aspect-[3.06]",
-      width: "w-[196px]"
+      aspectRatio: "aspect-square",
+      width: "w-[120px]"
     },
     {
       src: "https://api.builder.io/api/v1/image/assets/TEMP/aec7c2ab6451a33191f8637a15edf07b2ead3853?placeholderIfAbsent=true",
