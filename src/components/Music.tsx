@@ -1,6 +1,7 @@
 import React from 'react';
 import bandcampLogo from '@/assets/bandcamp-logo.png';
 import spotifyLogo from '@/assets/spotify-logo.png';
+import appleMusicLogo from '@/assets/apple-music-logo.svg';
 
 export const Music: React.FC = () => {
   const availableNowPlatforms = [
@@ -21,10 +22,10 @@ export const Music: React.FC = () => {
       width: "w-[120px]"
     },
     {
-      src: "https://api.builder.io/api/v1/image/assets/TEMP/aec7c2ab6451a33191f8637a15edf07b2ead3853?placeholderIfAbsent=true",
+      src: appleMusicLogo,
       alt: "Apple Music platform logo",
-      aspectRatio: "aspect-[4.61]", 
-      width: "w-[295px]"
+      aspectRatio: "aspect-square", 
+      width: "w-[120px]"
     },
     {
       src: "https://api.builder.io/api/v1/image/assets/TEMP/8f779beb511c99a6c61a5fc5ae3a42332b2cc49b?placeholderIfAbsent=true",
