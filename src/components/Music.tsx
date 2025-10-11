@@ -3,6 +3,7 @@ import bandcampLogo from '@/assets/bandcamp-logo.png';
 import spotifyLogo from '@/assets/spotify-logo.png';
 import appleMusicLogo from '@/assets/apple-music-logo.svg';
 import youtubeLogo from '@/assets/youtube-logo.png';
+import amazonMusicLogo from '@/assets/amazon-music-logo.png';
 
 export const Music: React.FC = () => {
   const availableNowPlatforms = [
@@ -31,6 +32,12 @@ export const Music: React.FC = () => {
     {
       src: youtubeLogo,
       alt: "YouTube music platform logo",
+      aspectRatio: "aspect-square",
+      width: "w-[120px]"
+    },
+    {
+      src: amazonMusicLogo,
+      alt: "Amazon Music platform logo",
       aspectRatio: "aspect-square",
       width: "w-[120px]"
     }
