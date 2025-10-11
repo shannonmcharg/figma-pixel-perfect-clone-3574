@@ -59,17 +59,13 @@ export const Music: React.FC = () => {
                 href={platform.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-shrink-0 w-32 sm:w-40 lg:w-auto hover:opacity-80 transition-opacity"
+                className="flex-shrink-0 hover:opacity-80 transition-opacity"
               >
-                <div className="relative overflow-hidden rounded-xl">
+                <div className="relative aspect-square w-28 sm:w-32 lg:w-40">
                   <img
                     src={platform.src}
                     alt={platform.alt}
-                    className="w-full h-auto object-cover lg:w-auto lg:h-auto"
-                    style={{ 
-                      aspectRatio: platform.aspectRatio.replace('aspect-', '').replace('[', '').replace(']', ''),
-                      maxWidth: platform.width.replace('w-', '').replace('[', '').replace(']', '').replace('px', '') + 'px'
-                    }}
+                    className="w-full h-full object-contain"
                   />
                 </div>
               </a>
