@@ -83,7 +83,7 @@ export const Music: React.FC = () => {
             Listen Online
           </h3>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
             <div className="mb-8">
             <h4 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">
               Available Now
