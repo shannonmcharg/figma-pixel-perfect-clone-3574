@@ -6,8 +6,8 @@ export const Music: React.FC = () => {
     {
       src: bandcampLogo,
       alt: "Bandcamp platform logo",
-      aspectRatio: "aspect-[3.18]",
-      width: "w-[204px]",
+      aspectRatio: "aspect-square",
+      width: "w-[120px]",
       href: "https://shannonmcharg.bandcamp.com/"
     }
   ];
