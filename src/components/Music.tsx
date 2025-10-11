@@ -61,7 +61,7 @@ export const Music: React.FC = () => {
                 rel="noopener noreferrer"
                 className="flex-shrink-0 hover:opacity-80 transition-opacity"
               >
-                <div className="relative aspect-square w-28 sm:w-32 lg:w-40 bg-transparent">
+                <div className="relative aspect-square w-8 sm:w-10 lg:w-12 bg-transparent">
                   <img
                     src={platform.src}
                     alt={platform.alt}
