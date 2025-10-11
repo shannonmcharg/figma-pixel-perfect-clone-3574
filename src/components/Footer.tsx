@@ -1,5 +1,6 @@
 import React from 'react';
-import { Mail, Newspaper, Youtube } from 'lucide-react';
+import { Mail, Newspaper } from 'lucide-react';
+import youtubeLogo from '@/assets/youtube-logo.png';
 
 export const Footer: React.FC = () => {
   const socialLinks = [
@@ -75,7 +76,12 @@ export const Footer: React.FC = () => {
                 role="link"
               >
                 <div className="p-2 sm:p-3 rounded-full bg-accent/30 hover:bg-accent transition-all duration-300 group-hover:scale-110">
-                  <Youtube className="w-6 h-6 text-foreground group-hover:scale-110 transition-transform duration-300" />
+                  <img
+                    src={youtubeLogo}
+                    alt=""
+                    className="w-6 h-6 object-contain group-hover:scale-110 transition-transform duration-300"
+                    role="presentation"
+                  />
                 </div>
                 <span className="text-xs text-muted-foreground group-hover:text-foreground transition-colors">YouTube</span>
               </a>

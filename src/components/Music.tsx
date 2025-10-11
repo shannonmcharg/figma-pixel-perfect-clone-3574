@@ -2,6 +2,7 @@ import React from 'react';
 import bandcampLogo from '@/assets/bandcamp-logo.png';
 import spotifyLogo from '@/assets/spotify-logo.png';
 import appleMusicLogo from '@/assets/apple-music-logo.svg';
+import youtubeLogo from '@/assets/youtube-logo.png';
 
 export const Music: React.FC = () => {
   const availableNowPlatforms = [
@@ -28,10 +29,10 @@ export const Music: React.FC = () => {
       width: "w-[120px]"
     },
     {
-      src: "https://api.builder.io/api/v1/image/assets/TEMP/8f779beb511c99a6c61a5fc5ae3a42332b2cc49b?placeholderIfAbsent=true",
+      src: youtubeLogo,
       alt: "YouTube music platform logo",
-      aspectRatio: "aspect-[3.31]",
-      width: "w-[212px]"
+      aspectRatio: "aspect-square",
+      width: "w-[120px]"
     }
   ];
 
