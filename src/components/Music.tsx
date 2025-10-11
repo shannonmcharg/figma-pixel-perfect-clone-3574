@@ -61,11 +61,12 @@ export const Music: React.FC = () => {
                 rel="noopener noreferrer"
                 className="flex-shrink-0 hover:opacity-80 transition-opacity"
               >
-                <div className="relative aspect-square w-28 sm:w-32 lg:w-40">
+                <div className="relative aspect-square w-28 sm:w-32 lg:w-40 bg-muted">
                   <img
                     src={platform.src}
                     alt={platform.alt}
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-contain bg-transparent"
+                    style={{ backgroundColor: 'transparent' }}
                   />
                 </div>
               </a>
