@@ -69,7 +69,7 @@ export const Music: React.FC = () => {
                 href={platform.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-shrink-0 hover:opacity-80 transition-opacity"
+                className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity"
               >
                 <div className="relative aspect-square w-8 sm:w-10 lg:w-12 bg-transparent">
                   <img
@@ -79,6 +79,7 @@ export const Music: React.FC = () => {
                     style={{ backgroundColor: 'transparent' }}
                   />
                 </div>
+                <span className="text-xs text-muted-foreground">Bandcamp</span>
               </a>
             ))}
           </div>
@@ -92,7 +93,7 @@ export const Music: React.FC = () => {
             {comingSoonPlatforms.map((platform, index) => (
               <div 
                 key={index} 
-                className="flex-shrink-0"
+                className="flex flex-col items-center gap-2"
               >
                 <div className="relative aspect-square w-8 sm:w-10 lg:w-12 bg-transparent">
                   <img
@@ -102,6 +103,9 @@ export const Music: React.FC = () => {
                     style={{ backgroundColor: 'transparent' }}
                   />
                 </div>
+                <span className="text-xs text-muted-foreground">
+                  {platform.alt.replace(' music streaming platform logo', '').replace(' platform logo', '').replace(' music platform logo', '')}
+                </span>
               </div>
             ))}
           </div>
