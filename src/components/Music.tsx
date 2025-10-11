@@ -6,7 +6,8 @@ export const Music: React.FC = () => {
       src: "https://api.builder.io/api/v1/image/assets/TEMP/44321cf19157501330e82958763daee7ebe1a954?placeholderIfAbsent=true",
       alt: "Bandcamp platform logo",
       aspectRatio: "aspect-[3.18]",
-      width: "w-[204px]"
+      width: "w-[204px]",
+      href: "https://shannonmcharg.bandcamp.com/"
     }
   ];
 
@@ -52,9 +53,12 @@ export const Music: React.FC = () => {
           </h3>
           <div className="flex items-center justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8 flex-wrap">
             {availableNowPlatforms.map((platform, index) => (
-              <div 
-                key={index} 
-                className="flex-shrink-0 w-32 sm:w-40 lg:w-auto"
+              <a
+                key={index}
+                href={platform.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-shrink-0 w-32 sm:w-40 lg:w-auto hover:opacity-80 transition-opacity"
               >
                 <div className="relative overflow-hidden rounded-xl">
                   <img
@@ -67,7 +71,7 @@ export const Music: React.FC = () => {
                     }}
                   />
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
