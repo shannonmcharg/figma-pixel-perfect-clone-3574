@@ -83,17 +83,14 @@ export const Music: React.FC = () => {
             {comingSoonPlatforms.map((platform, index) => (
               <div 
                 key={index} 
-                className="flex-shrink-0 w-32 sm:w-40 lg:w-auto"
+                className="flex-shrink-0"
               >
-                <div className="relative overflow-hidden rounded-xl">
+                <div className="relative aspect-square w-8 sm:w-10 lg:w-12 bg-transparent">
                   <img
                     src={platform.src}
                     alt={platform.alt}
-                    className="w-full h-auto object-cover lg:w-auto lg:h-auto"
-                    style={{ 
-                      aspectRatio: platform.aspectRatio.replace('aspect-', '').replace('[', '').replace(']', ''),
-                      maxWidth: platform.width.replace('w-', '').replace('[', '').replace(']', '').replace('px', '') + 'px'
-                    }}
+                    className="w-full h-full object-contain bg-transparent"
+                    style={{ backgroundColor: 'transparent' }}
                   />
                 </div>
               </div>
