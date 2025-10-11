@@ -139,7 +139,7 @@ export const Music: React.FC = () => {
           </div>
         </div>
 
-        <div className="mt-8 sm:mt-10 lg:mt-12">
+        <div>
           <h3 className="text-secondary text-2xl sm:text-3xl font-semibold mb-6 text-left">
             Open Mics
           </h3>
