@@ -21,25 +21,29 @@ export const Music: React.FC = () => {
       src: spotifyLogo,
       alt: "Spotify music streaming platform logo", 
       aspectRatio: "aspect-square",
-      width: "w-[120px]"
+      width: "w-[120px]",
+      name: "Spotify"
     },
     {
       src: appleMusicLogo,
       alt: "Apple Music platform logo",
       aspectRatio: "aspect-square", 
-      width: "w-[120px]"
+      width: "w-[120px]",
+      name: "Apple Music"
     },
     {
       src: amazonMusicLogo,
       alt: "Amazon Music platform logo",
       aspectRatio: "aspect-square",
-      width: "w-[120px]"
+      width: "w-[120px]",
+      name: "Amazon Music"
     },
     {
       src: youtubeLogo,
       alt: "YouTube music platform logo",
       aspectRatio: "aspect-square",
-      width: "w-[120px]"
+      width: "w-[120px]",
+      name: "YouTube"
     }
   ];
 
@@ -104,7 +108,7 @@ export const Music: React.FC = () => {
                   />
                 </div>
                 <span className="text-xs text-muted-foreground">
-                  {platform.alt.replace(' music streaming platform logo', '').replace(' platform logo', '').replace(' music platform logo', '')}
+                  {platform.name}
                 </span>
               </div>
             ))}
