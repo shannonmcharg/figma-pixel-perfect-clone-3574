@@ -1,13 +1,16 @@
 import React from 'react';
 
 export const Music: React.FC = () => {
-  const comingSoonPlatforms = [
+  const availableNowPlatforms = [
     {
       src: "https://api.builder.io/api/v1/image/assets/TEMP/44321cf19157501330e82958763daee7ebe1a954?placeholderIfAbsent=true",
       alt: "Bandcamp platform logo",
       aspectRatio: "aspect-[3.18]",
       width: "w-[204px]"
-    },
+    }
+  ];
+
+  const comingSoonPlatforms = [
     {
       src: "https://api.builder.io/api/v1/image/assets/TEMP/11c2e22f26f83eefc0b55c4824460c9962f09d96?placeholderIfAbsent=true",
       alt: "Spotify music streaming platform logo", 
@@ -43,6 +46,32 @@ export const Music: React.FC = () => {
           <div className="absolute -bottom-4 left-1/2 lg:left-0 transform -translate-x-1/2 lg:translate-x-0 w-16 h-1 bg-primary rounded-full"></div>
         </h2>
         
+        <div className="mb-8">
+          <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">
+            Available Now
+          </h3>
+          <div className="flex items-center justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8 flex-wrap">
+            {availableNowPlatforms.map((platform, index) => (
+              <div 
+                key={index} 
+                className="flex-shrink-0 w-32 sm:w-40 lg:w-auto"
+              >
+                <div className="relative overflow-hidden rounded-xl">
+                  <img
+                    src={platform.src}
+                    alt={platform.alt}
+                    className="w-full h-auto object-cover lg:w-auto lg:h-auto"
+                    style={{ 
+                      aspectRatio: platform.aspectRatio.replace('aspect-', '').replace('[', '').replace(']', ''),
+                      maxWidth: platform.width.replace('w-', '').replace('[', '').replace(']', '').replace('px', '') + 'px'
+                    }}
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="mb-8">
           <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">
             Coming Soon to All Online Platforms
