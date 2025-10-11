@@ -1,9 +1,10 @@
 import React from 'react';
+import bandcampLogo from '@/assets/bandcamp-logo.png';
 
 export const Music: React.FC = () => {
   const availableNowPlatforms = [
     {
-      src: "https://api.builder.io/api/v1/image/assets/TEMP/44321cf19157501330e82958763daee7ebe1a954?placeholderIfAbsent=true",
+      src: bandcampLogo,
       alt: "Bandcamp platform logo",
       aspectRatio: "aspect-[3.18]",
       width: "w-[204px]",
