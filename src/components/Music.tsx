@@ -140,7 +140,7 @@ export const Music: React.FC = () => {
         </div>
 
         <div className="mt-16 sm:mt-20 lg:mt-24">
-          <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">
+          <h3 className="text-secondary text-2xl sm:text-3xl font-semibold mb-6 text-left">
             Open Mics
           </h3>
           <p className="text-foreground text-base mb-4 text-left">
