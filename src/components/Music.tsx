@@ -80,7 +80,7 @@ export const Music: React.FC = () => {
 
         <div className="mb-12">
           <h3 className="text-secondary text-2xl sm:text-3xl font-semibold mb-6 text-left">
-            Online Platforms
+            Listen Online
           </h3>
           
           <div className="mb-8">
