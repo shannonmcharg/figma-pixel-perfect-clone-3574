@@ -91,7 +91,7 @@ export const Music: React.FC = () => {
 
         <div className="mb-8">
           <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">
-            Coming Soon to All Online Platforms
+            Coming Soon
           </h3>
           <div className="flex items-center justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8 flex-wrap opacity-50">
             {comingSoonPlatforms.map((platform, index) => (
