@@ -30,14 +30,14 @@ export const Music: React.FC = () => {
       width: "w-[120px]"
     },
     {
-      src: youtubeLogo,
-      alt: "YouTube music platform logo",
+      src: amazonMusicLogo,
+      alt: "Amazon Music platform logo",
       aspectRatio: "aspect-square",
       width: "w-[120px]"
     },
     {
-      src: amazonMusicLogo,
-      alt: "Amazon Music platform logo",
+      src: youtubeLogo,
+      alt: "YouTube music platform logo",
       aspectRatio: "aspect-square",
       width: "w-[120px]"
     }
