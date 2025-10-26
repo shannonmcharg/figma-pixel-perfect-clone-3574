@@ -38,7 +38,7 @@ export const About: React.FC = () => {
             </p>
             
             <p className="text-left">
-              Her first set of releases is a series of 6 themed EP collections. The first is Plastic Cuppa Fall, a commentary on performative seasonal joy. The rest of the series will release over the coming months and include Holidaze Pie, Forked, False Choices, Consumed, and Uncoupled.
+              Her first set of releases is a series of 6 themed EP collections. The first is <em>Plastic Cuppa Fall</em>, a commentary on performative seasonal joy. The rest of the series will release over the coming months and include <em>Holidaze Pie</em>, <em>Forked</em>, <em>False Choices</em>, <em>Consumed</em>, and <em>Uncoupled</em>.
             </p>
             
             <div className="mt-8 sm:mt-10">
@@ -65,7 +65,7 @@ export const About: React.FC = () => {
                       By day, she makes tech work for people (formally known as "human-centered design"). This human-centeredness bleeds into her music. Her musical design moves fluidly between the personal and social. It holds space for empathy as a way to "claw back" from feelings of loss and despair.
                     </p>
                     <p className="text-left">
-                      As her fans move across her conceptually themed collections — Plastic Cuppa Fall, Holidaze Pie, Forked, False Choices, Consumed, and Uncoupled — they find an exploration that chronicles everything from divorce and media fragmentation to political disillusionment and the search for renewed community.
+                      As her fans move across her conceptually themed collections — <em>Plastic Cuppa Fall</em>, <em>Holidaze Pie</em>, <em>Forked</em>, <em>False Choices</em>, <em>Consumed</em>, and <em>Uncoupled</em> — they find an exploration that chronicles everything from divorce and media fragmentation to political disillusionment and the search for renewed community.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
