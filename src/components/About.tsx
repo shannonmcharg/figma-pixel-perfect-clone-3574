@@ -39,6 +39,30 @@ export const About: React.FC = () => {
             </p>
             
             <div className="mt-8 sm:mt-10">
+              <Accordion type="single" collapsible className="w-full">
+                <AccordionItem value="full-bio" className="border-none">
+                  <AccordionTrigger className="text-primary hover:text-primary/80 font-semibold text-left hover:no-underline py-2">
+                    + Full bio
+                  </AccordionTrigger>
+                  <AccordionContent className="text-foreground text-base leading-relaxed space-y-4 pt-4">
+                    <p className="text-left">
+                      Anchoring complex emotions to everyday cultural references, Shannon McHarg's music invites introspection. There is a quiet rebellion in Shannon's reflective, sometimes humorous, often sociopolitical songs. Her lyrics move through feelings of disillusionment to a push for meaning, connection, and agency.
+                    </p>
+                    <p className="text-left">
+                      Expressing emotions was not part of Shannon's formative years. Now, she writes to process and release emotions. She wants to help others do the same. Her guitar has become a gateway to knowing herself and sharing her discoveries with others.
+                    </p>
+                    <p className="text-left">
+                      By day, she makes tech work for people (formally known as "human-centered design"). This human-centeredness bleeds into her music. Her musical design moves fluidly between the personal and social. It holds space for empathy as a way to "claw back" from feelings of loss and despair.
+                    </p>
+                    <p className="text-left">
+                      As her fans move across her conceptually themed collections — Plastic Cuppa Fall, Holidaze Pie, Forked, False Choices, Consumed, and Uncoupled — they find an exploration that chronicles everything from divorce and media fragmentation to political disillusionment and the search for renewed community.
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </div>
+            
+            <div className="mt-8 sm:mt-10">
               <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">
                 Influences
               </h3>
@@ -75,30 +99,6 @@ export const About: React.FC = () => {
                   <span className="text-foreground ml-2">Vocal coaching</span>
                 </div>
               </div>
-            </div>
-            
-            <div className="mt-8 sm:mt-10">
-              <Accordion type="single" collapsible className="w-full">
-                <AccordionItem value="full-bio" className="border-none">
-                  <AccordionTrigger className="text-primary hover:text-primary/80 font-semibold text-left hover:no-underline py-2">
-                    + Full bio
-                  </AccordionTrigger>
-                  <AccordionContent className="text-foreground text-base leading-relaxed space-y-4 pt-4">
-                    <p className="text-left">
-                      Anchoring complex emotions to everyday cultural references, Shannon McHarg's music invites introspection. There is a quiet rebellion in Shannon's reflective, sometimes humorous, often sociopolitical songs. Her lyrics move through feelings of disillusionment to a push for meaning, connection, and agency.
-                    </p>
-                    <p className="text-left">
-                      Expressing emotions was not part of Shannon's formative years. Now, she writes to process and release emotions. She wants to help others do the same. Her guitar has become a gateway to knowing herself and sharing her discoveries with others.
-                    </p>
-                    <p className="text-left">
-                      By day, she makes tech work for people (formally known as "human-centered design"). This human-centeredness bleeds into her music. Her musical design moves fluidly between the personal and social. It holds space for empathy as a way to "claw back" from feelings of loss and despair.
-                    </p>
-                    <p className="text-left">
-                      As her fans move across her conceptually themed collections — Plastic Cuppa Fall, Holidaze Pie, Forked, False Choices, Consumed, and Uncoupled — they find an exploration that chronicles everything from divorce and media fragmentation to political disillusionment and the search for renewed community.
-                    </p>
-                  </AccordionContent>
-                </AccordionItem>
-              </Accordion>
             </div>
           </div>
         </article>
