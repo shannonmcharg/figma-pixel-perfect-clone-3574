@@ -1,10 +1,11 @@
 import React from 'react';
+import { Plus, Minus } from 'lucide-react';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger,
 } from "@/components/ui/accordion";
+import * as AccordionPrimitive from "@radix-ui/react-accordion";
 
 export const About: React.FC = () => {
   return (
@@ -41,9 +42,13 @@ export const About: React.FC = () => {
             <div className="mt-8 sm:mt-10">
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="full-bio" className="border-none">
-                  <AccordionTrigger className="text-primary hover:text-primary/80 font-semibold text-left hover:no-underline py-2">
-                    + Full bio
-                  </AccordionTrigger>
+                  <AccordionPrimitive.Header className="flex">
+                    <AccordionPrimitive.Trigger className="flex items-center gap-2 text-primary hover:text-primary/80 font-semibold text-left py-2 group">
+                      <Plus className="h-4 w-4 shrink-0 group-data-[state=open]:hidden" />
+                      <Minus className="h-4 w-4 shrink-0 group-data-[state=closed]:hidden" />
+                      <span>Full bio</span>
+                    </AccordionPrimitive.Trigger>
+                  </AccordionPrimitive.Header>
                   <AccordionContent className="text-foreground text-base leading-relaxed space-y-4 pt-4">
                     <p className="text-left">
                       Anchoring complex emotions to everyday cultural references, Shannon McHarg's music invites introspection. There is a quiet rebellion in Shannon's reflective, sometimes humorous, often sociopolitical songs. Her lyrics move through feelings of disillusionment to a push for meaning, connection, and agency.
