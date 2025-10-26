@@ -32,8 +32,7 @@ export const About: React.FC = () => {
               songwriting.
             </p>
             <p className="text-base sm:text-lg italic text-muted-foreground border-l-4 border-primary pl-4 sm:pl-6 text-left">
-              Shannon writes quirky, punky, observational songs about
-              social issues, politics, and holidays.
+              "But I don't know how to make real change." Shannon writes folk punk songs to feel, reflect, and find the strength to deal with our crumbling world.
             </p>
             
             <div className="mt-8 sm:mt-10">
