@@ -29,12 +29,12 @@ export const About: React.FC = () => {
           </h2>
           
           <div className="text-foreground text-lg sm:text-xl font-normal leading-relaxed tracking-normal space-y-4 sm:space-y-6">
-            <p className="text-left">
-              Anchoring complex emotions to everyday cultural references, Shannon McHarg's music invites introspection. There is a quiet rebellion in Shannon's reflective, sometimes humorous, often sociopolitical songs. Her lyrics move through feelings of disillusionment to a push for meaning, connection, and agency.
-            </p>
-            
             <p className="text-base sm:text-lg italic text-muted-foreground border-l-4 border-primary pl-4 sm:pl-6 text-left">
               "But I don't know how to make real change." Shannon writes folk punk songs to feel, reflect, and find the strength to deal with our crumbling world.
+            </p>
+            
+            <p className="text-left">
+              Anchoring complex emotions to everyday cultural references, Shannon McHarg's music invites introspection. There is a quiet rebellion in Shannon's reflective, sometimes humorous, often sociopolitical songs. Her lyrics move through feelings of disillusionment to a push for meaning, connection, and agency.
             </p>
             
             <p className="text-left">
