@@ -44,7 +44,7 @@ export const Music: React.FC = () => {
       alt: "YouTube music platform logo",
       aspectRatio: "aspect-square",
       width: "w-[120px]",
-      href: "https://music.youtube.com/channel/UCCZrRcE-indAPT6rVBaTDmA",
+      href: "https://music.youtube.com/channel/UCCZrRcE-indAPT6rVBaTDmA?si=GSF_LU_6-LyfdmWh",
       name: "YouTube"
     }
   ];
