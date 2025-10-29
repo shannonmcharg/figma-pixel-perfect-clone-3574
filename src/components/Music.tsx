@@ -4,6 +4,7 @@ import spotifyLogo from '@/assets/spotify-logo.png';
 import appleMusicLogo from '@/assets/apple-music-logo.svg';
 import youtubeLogo from '@/assets/youtube-logo.png';
 import amazonMusicLogo from '@/assets/amazon-music-logo.png';
+import tidalLogo from '@/assets/tidal-logo.png';
 
 export const Music: React.FC = () => {
   const availableNowPlatforms = [
@@ -46,6 +47,14 @@ export const Music: React.FC = () => {
       width: "w-[120px]",
       href: "https://music.youtube.com/channel/UCCZrRcE-indAPT6rVBaTDmA?si=GSF_LU_6-LyfdmWh",
       name: "YouTube"
+    },
+    {
+      src: tidalLogo,
+      alt: "Tidal music streaming platform logo",
+      aspectRatio: "aspect-square",
+      width: "w-[120px]",
+      href: "https://tidal.com/artist/67993245",
+      name: "Tidal"
     }
   ];
 
