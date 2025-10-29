@@ -5,6 +5,7 @@ import appleMusicLogo from '@/assets/apple-music-logo.svg';
 import youtubeLogo from '@/assets/youtube-logo.png';
 import amazonMusicLogo from '@/assets/amazon-music-logo.png';
 import tidalLogo from '@/assets/tidal-logo.png';
+import pandoraLogo from '@/assets/pandora-logo.png';
 
 export const Music: React.FC = () => {
   const availableNowPlatforms = [
@@ -55,6 +56,14 @@ export const Music: React.FC = () => {
       width: "w-[120px]",
       href: "https://tidal.com/artist/67993245",
       name: "Tidal"
+    },
+    {
+      src: pandoraLogo,
+      alt: "Pandora music streaming platform logo",
+      aspectRatio: "aspect-square",
+      width: "w-[120px]",
+      href: "https://www.pandora.com/artist/shannon-mcharg/ARthXx7797ZX5fK",
+      name: "Pandora"
     }
   ];
 
