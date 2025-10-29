@@ -49,8 +49,6 @@ export const Music: React.FC = () => {
     }
   ];
 
-  const comingSoonPlatforms = [];
-
   return (
     <section 
       id="music" 
@@ -111,32 +109,6 @@ export const Music: React.FC = () => {
                   </div>
                   <span className="text-xs text-muted-foreground">{platform.name}</span>
                 </a>
-              ))}
-            </div>
-            </div>
-
-            <div className="mb-8">
-              <h4 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">
-                Coming Soon
-              </h4>
-            <div className="flex items-center justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8 flex-wrap opacity-50">
-              {comingSoonPlatforms.map((platform, index) => (
-                <div 
-                  key={index} 
-                  className="flex flex-col items-center gap-2"
-                >
-                  <div className="relative aspect-square w-8 sm:w-10 lg:w-12 bg-transparent">
-                    <img
-                      src={platform.src}
-                      alt={platform.alt}
-                      className="w-full h-full object-contain bg-transparent"
-                      style={{ backgroundColor: 'transparent' }}
-                    />
-                  </div>
-                  <span className="text-xs text-muted-foreground">
-                    {platform.name}
-                  </span>
-                </div>
               ))}
             </div>
             </div>
