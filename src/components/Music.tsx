@@ -87,9 +87,6 @@ export const Music: React.FC = () => {
           
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
             <div className="mb-8">
-            <h4 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">
-              Available Now
-            </h4>
             <div className="flex items-center justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8 flex-wrap">
               {availableNowPlatforms.map((platform, index) => (
                 <a
