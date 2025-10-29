@@ -73,42 +73,64 @@ export const About: React.FC = () => {
             </div>
             
             <div className="mt-8 sm:mt-10">
-              <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">
-                Influences
-              </h3>
-              <div className="flex flex-wrap gap-2 justify-start">
-                {['Ani DiFranco', 'Billy Bragg', 'Brandi Carlile', 'Butch Walker', 'Cake', 'The Clash', 'Daniel Johnston', 'Elvis Costello', 'Jill Sobule', 'Kacey Musgraves', 'Liz Phair', 'Margaret Glaspy', 'Patti Smith', 'Pete Yorn', 'PJ Harvey', 'The Replacements', 'Sam Phillips', 'Siouxsie and the Banshees', 'Whim', 'XTC'].map((influence) => (
-                  <span
-                    key={influence}
-                    className="px-3 py-1.5 bg-primary/10 text-foreground rounded-full text-sm font-medium border border-primary/20"
-                  >
-                    {influence}
-                  </span>
-                ))}
-              </div>
-            </div>
-            
-            <div className="mt-8 sm:mt-10">
-              <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">
-                Collaborators
-              </h3>
-              <p className="text-foreground text-base mb-4 text-left">
-                These are the humans who helped get my music out into the world.
-              </p>
-              <div className="space-y-3">
-                <div className="text-left">
-                  <a href="https://judcaswell.com/" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:text-primary/80 transition-colors underline">Jud Caswell:</a>
-                  <span className="text-foreground ml-2">Production and recording</span>
-                </div>
-                <div className="text-left">
-                  <a href="https://www.facebook.com/CowboyRexyDinosaur" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:text-primary/80 transition-colors underline">Rexy Dinosaur:</a>
-                  <span className="text-foreground ml-2">Bass and percussion</span>
-                </div>
-                <div className="text-left">
-                  <a href="https://chenardvoicestudio.com/" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:text-primary/80 transition-colors underline">Erin Chenard:</a>
-                  <span className="text-foreground ml-2">Vocal coaching</span>
-                </div>
-              </div>
+              <Accordion type="single" collapsible className="w-full space-y-4">
+                <AccordionItem value="influences" className="border border-border rounded-lg overflow-hidden">
+                  <AccordionPrimitive.Header className="flex">
+                    <AccordionPrimitive.Trigger 
+                      className="flex items-center gap-3 text-primary hover:text-primary/80 font-semibold text-left py-3 px-4 group w-full bg-muted/30 hover:bg-muted/50 transition-colors"
+                      aria-label="Toggle influences"
+                    >
+                      <Plus className="h-5 w-5 shrink-0 group-data-[state=open]:hidden" aria-hidden="true" />
+                      <Minus className="h-5 w-5 shrink-0 group-data-[state=closed]:hidden" aria-hidden="true" />
+                      <span>Influences</span>
+                    </AccordionPrimitive.Trigger>
+                  </AccordionPrimitive.Header>
+                  <AccordionContent className="px-4 pb-4 pt-4 bg-background" role="region" aria-label="Influences content">
+                    <div className="flex flex-wrap gap-2 justify-start">
+                      {['Ani DiFranco', 'Billy Bragg', 'Brandi Carlile', 'Butch Walker', 'Cake', 'The Clash', 'Daniel Johnston', 'Elvis Costello', 'Jill Sobule', 'Kacey Musgraves', 'Liz Phair', 'Margaret Glaspy', 'Patti Smith', 'Pete Yorn', 'PJ Harvey', 'The Replacements', 'Sam Phillips', 'Siouxsie and the Banshees', 'Whim', 'XTC'].map((influence) => (
+                        <span
+                          key={influence}
+                          className="px-3 py-1.5 bg-primary/10 text-foreground rounded-full text-sm font-medium border border-primary/20"
+                        >
+                          {influence}
+                        </span>
+                      ))}
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="collaborators" className="border border-border rounded-lg overflow-hidden">
+                  <AccordionPrimitive.Header className="flex">
+                    <AccordionPrimitive.Trigger 
+                      className="flex items-center gap-3 text-primary hover:text-primary/80 font-semibold text-left py-3 px-4 group w-full bg-muted/30 hover:bg-muted/50 transition-colors"
+                      aria-label="Toggle collaborators"
+                    >
+                      <Plus className="h-5 w-5 shrink-0 group-data-[state=open]:hidden" aria-hidden="true" />
+                      <Minus className="h-5 w-5 shrink-0 group-data-[state=closed]:hidden" aria-hidden="true" />
+                      <span>Collaborators</span>
+                    </AccordionPrimitive.Trigger>
+                  </AccordionPrimitive.Header>
+                  <AccordionContent className="px-4 pb-4 pt-4 bg-background" role="region" aria-label="Collaborators content">
+                    <p className="text-foreground text-base mb-4 text-left">
+                      These are the humans who helped get my music out into the world.
+                    </p>
+                    <div className="space-y-3">
+                      <div className="text-left">
+                        <a href="https://judcaswell.com/" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:text-primary/80 transition-colors underline">Jud Caswell:</a>
+                        <span className="text-foreground ml-2">Production and recording</span>
+                      </div>
+                      <div className="text-left">
+                        <a href="https://www.facebook.com/CowboyRexyDinosaur" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:text-primary/80 transition-colors underline">Rexy Dinosaur:</a>
+                        <span className="text-foreground ml-2">Bass and percussion</span>
+                      </div>
+                      <div className="text-left">
+                        <a href="https://chenardvoicestudio.com/" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:text-primary/80 transition-colors underline">Erin Chenard:</a>
+                        <span className="text-foreground ml-2">Vocal coaching</span>
+                      </div>
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
             </div>
           </div>
         </article>
