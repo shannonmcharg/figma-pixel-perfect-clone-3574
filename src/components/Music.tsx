@@ -22,17 +22,18 @@ export const Music: React.FC = () => {
       width: "w-[120px]",
       href: "https://open.spotify.com/artist/6JUDGvBQiLagw4rt8Gb9ct?si=BUe2A0UGQYmeuY00msZWhQ",
       name: "Spotify"
-    }
-  ];
-
-  const comingSoonPlatforms = [
+    },
     {
       src: appleMusicLogo,
       alt: "Apple Music platform logo",
       aspectRatio: "aspect-square", 
       width: "w-[120px]",
+      href: "https://music.apple.com/us/artist/shannon-mcharg/1844698992",
       name: "Apple Music"
-    },
+    }
+  ];
+
+  const comingSoonPlatforms = [
     {
       src: amazonMusicLogo,
       alt: "Amazon Music platform logo",
