@@ -12,18 +12,20 @@ export const Music: React.FC = () => {
       alt: "Bandcamp platform logo",
       aspectRatio: "aspect-square",
       width: "w-[120px]",
-      href: "https://shannonmcharg.bandcamp.com/"
+      href: "https://shannonmcharg.bandcamp.com/",
+      name: "Bandcamp"
+    },
+    {
+      src: spotifyLogo,
+      alt: "Spotify music streaming platform logo",
+      aspectRatio: "aspect-square",
+      width: "w-[120px]",
+      href: "https://open.spotify.com/artist/6JUDGvBQiLagw4rt8Gb9ct?si=BUe2A0UGQYmeuY00msZWhQ",
+      name: "Spotify"
     }
   ];
 
   const comingSoonPlatforms = [
-    {
-      src: spotifyLogo,
-      alt: "Spotify music streaming platform logo", 
-      aspectRatio: "aspect-square",
-      width: "w-[120px]",
-      name: "Spotify"
-    },
     {
       src: appleMusicLogo,
       alt: "Apple Music platform logo",
@@ -105,7 +107,7 @@ export const Music: React.FC = () => {
                       style={{ backgroundColor: 'transparent' }}
                     />
                   </div>
-                  <span className="text-xs text-muted-foreground">Bandcamp</span>
+                  <span className="text-xs text-muted-foreground">{platform.name}</span>
                 </a>
               ))}
             </div>
