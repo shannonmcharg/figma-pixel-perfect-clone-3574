@@ -17,35 +17,30 @@ const Index = () => {
       { id: 'connect', name: 'Connect' }
     ];
 
-    let currentSections = new Set<string>();
+    const handleScroll = () => {
+      const headerOffset = 150;
+      const scrollPosition = window.scrollY + headerOffset;
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            currentSections.add(entry.target.id);
-          } else {
-            currentSections.delete(entry.target.id);
-          }
-        });
-
-        // Find the topmost visible section
-        if (currentSections.size > 0) {
-          for (const sectionData of sections) {
-            if (currentSections.has(sectionData.id)) {
-              setActiveSection(sectionData.name);
-              break;
-            }
+      // Find which section is currently in view
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = sections[i];
+        const element = document.getElementById(section.id);
+        
+        if (element) {
+          const offsetTop = element.offsetTop;
+          
+          if (scrollPosition >= offsetTop) {
+            setActiveSection(section.name);
+            break;
           }
         }
-      },
-      { threshold: [0, 0.25, 0.5, 0.75, 1], rootMargin: '-100px 0px -60% 0px' }
-    );
+      }
+    };
 
-    sections.forEach(({ id }) => {
-      const element = document.getElementById(id);
-      if (element) observer.observe(element);
-    });
+    // Initial check
+    handleScroll();
+    
+    window.addEventListener('scroll', handleScroll, { passive: true });
 
     // Handle smooth scroll with offset for sticky header
     const handleNavClick = (e: MouseEvent) => {
@@ -80,7 +75,7 @@ const Index = () => {
     document.addEventListener('click', handleNavClick);
 
     return () => {
-      observer.disconnect();
+      window.removeEventListener('scroll', handleScroll);
       document.removeEventListener('click', handleNavClick);
     };
   }, []);
