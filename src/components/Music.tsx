@@ -88,14 +88,18 @@ export const Music: React.FC = () => {
           </h3>
           <div className="flex flex-col items-center lg:items-start gap-3">
             <p className="text-foreground text-lg font-medium">Plastic Cuppa Fall</p>
-            <iframe
-              style={{ border: 0, width: '100%', maxWidth: '400px', height: '241px' }} 
-              src="https://bandcamp.com/EmbeddedPlayer/album=543644240/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" 
-              seamless
+            <iframe 
+              data-testid="embed-iframe" 
+              style={{ borderRadius: '12px' }} 
+              src="https://open.spotify.com/embed/album/56DFiwDg7cMfJS3kSk1eBg?utm_source=generator" 
+              width="100%" 
+              height="352" 
+              frameBorder="0" 
+              allowFullScreen 
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+              loading="lazy"
               title="Plastic Cuppa Fall by Shannon McHarg"
-            >
-              <a href="https://shannonmcharg.bandcamp.com/album/plastic-cuppa-fall">Plastic Cuppa Fall by Shannon McHarg</a>
-            </iframe>
+            />
           </div>
         </div>
 
