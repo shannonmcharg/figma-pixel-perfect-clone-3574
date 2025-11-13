@@ -17,18 +17,29 @@ const Index = () => {
       { id: 'connect', name: 'Connect' }
     ];
 
+    let currentSections = new Set<string>();
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            const section = sections.find(s => s.id === entry.target.id);
-            if (section) {
-              setActiveSection(section.name);
-            }
+            currentSections.add(entry.target.id);
+          } else {
+            currentSections.delete(entry.target.id);
           }
         });
+
+        // Find the topmost visible section
+        if (currentSections.size > 0) {
+          for (const sectionData of sections) {
+            if (currentSections.has(sectionData.id)) {
+              setActiveSection(sectionData.name);
+              break;
+            }
+          }
+        }
       },
-      { threshold: 0.3, rootMargin: '-80px 0px -50% 0px' }
+      { threshold: [0, 0.25, 0.5, 0.75, 1], rootMargin: '-100px 0px -60% 0px' }
     );
 
     sections.forEach(({ id }) => {
