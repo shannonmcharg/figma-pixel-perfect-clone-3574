@@ -151,6 +151,17 @@ export const Releases: React.FC = () => {
               </a>
             ))}
           </div>
+          <p className="text-muted-foreground text-sm mt-6">
+            Don't see your favorite platform?{' '}
+            <a 
+              href="https://cdbaby.com/music-distribution/digital-distribution-partners/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:opacity-80 transition-opacity"
+            >
+              Full list of platforms.
+            </a>
+          </p>
         </div>
       </div>
     </section>
