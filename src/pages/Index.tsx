@@ -17,8 +17,20 @@ const Index = () => {
       { id: 'connect', name: 'Connect' }
     ];
 
+    // Helpers for consistent header-aware scrolling
+    const getHeaderOffset = () => {
+      const headerEl = document.querySelector('header');
+      const headerHeight = headerEl ? (headerEl as HTMLElement).offsetHeight : 80;
+      // Add small spacing so H2 is fully visible below shadow
+      return headerHeight + 16;
+    };
+
+    let isProgrammaticScroll = false;
+
     const handleScroll = () => {
-      const headerOffset = 150;
+      if (isProgrammaticScroll) return;
+
+      const headerOffset = getHeaderOffset();
       const scrollPosition = window.scrollY + headerOffset;
       
       // Check if we're at the bottom of the page
@@ -54,31 +66,37 @@ const Index = () => {
     // Handle smooth scroll with offset for sticky header
     const handleNavClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
-      const link = target.closest('a[href^="#"]');
-      if (link) {
-        e.preventDefault();
-        const href = link.getAttribute('href');
-        if (href) {
-          const targetId = href.substring(1);
-          const targetElement = document.getElementById(targetId);
-          if (targetElement) {
-            // Immediately update active section on click
-            const section = sections.find(s => s.id === targetId);
-            if (section) {
-              setActiveSection(section.name);
-            }
-            
-            const headerOffset = 100;
-            const elementPosition = targetElement.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-            
-            window.scrollTo({
-              top: offsetPosition,
-              behavior: 'smooth'
-            });
-          }
-        }
+      const link = target.closest('a[href^="#"]') as HTMLAnchorElement | null;
+      if (!link) return;
+      e.preventDefault();
+      const href = link.getAttribute('href');
+      if (!href) return;
+
+      const targetId = href.substring(1);
+      const targetElement = document.getElementById(targetId);
+      if (!targetElement) return;
+
+      // Immediately update active section on click
+      const section = sections.find(s => s.id === targetId);
+      if (section) {
+        setActiveSection(section.name);
       }
+
+      isProgrammaticScroll = true;
+      const headerOffset = getHeaderOffset();
+      const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition - headerOffset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+
+      // Re-enable scroll detection after animation completes
+      window.setTimeout(() => {
+        isProgrammaticScroll = false;
+        handleScroll();
+      }, 600);
     };
 
     document.addEventListener('click', handleNavClick);
