@@ -78,10 +78,10 @@ export const Music: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <h2 
           id="music-heading"
-          className="text-secondary text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight mb-8 sm:mb-12 lg:mb-16 relative text-center lg:text-left"
+          className="text-secondary text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight mb-8 sm:mb-12 lg:mb-16 relative text-left"
         >
           Music
-          <div className="absolute -bottom-4 left-1/2 lg:left-0 transform -translate-x-1/2 lg:translate-x-0 w-16 h-1 bg-primary rounded-full"></div>
+          <div className="absolute -bottom-4 left-0 w-16 h-1 bg-primary rounded-full"></div>
         </h2>
         
         <div className="mb-12">
