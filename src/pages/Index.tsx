@@ -36,7 +36,36 @@ const Index = () => {
       if (element) observer.observe(element);
     });
 
-    return () => observer.disconnect();
+    // Handle smooth scroll with offset for sticky header
+    const handleNavClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      const link = target.closest('a[href^="#"]');
+      if (link) {
+        e.preventDefault();
+        const href = link.getAttribute('href');
+        if (href) {
+          const targetId = href.substring(1);
+          const targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            const headerOffset = 100;
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+          }
+        }
+      }
+    };
+
+    document.addEventListener('click', handleNavClick);
+
+    return () => {
+      observer.disconnect();
+      document.removeEventListener('click', handleNavClick);
+    };
   }, []);
 
   return (
