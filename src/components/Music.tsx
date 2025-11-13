@@ -1,4 +1,5 @@
 import React from 'react';
+import { Youtube } from 'lucide-react';
 import bandcampLogo from '@/assets/bandcamp-logo.png';
 import spotifyLogo from '@/assets/spotify-logo.png';
 import appleMusicLogo from '@/assets/apple-music-logo.svg';
@@ -100,19 +101,30 @@ export const Music: React.FC = () => {
               loading="lazy"
               title="Plastic Cuppa Fall by Shannon McHarg"
             />
-            <a
-              href="https://www.musixmatch.com/album/Shannon-McHarg/Plastic-Cuppa-Fall-Single"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 hover:opacity-80 transition-opacity mt-3"
-            >
-              <img
-                src={musixmatchLogo}
-                alt="Musixmatch logo"
-                className="w-6 h-6 object-contain"
-              />
-              <span className="text-foreground text-sm font-medium">Plastic Cuppa Fall Lyrics</span>
-            </a>
+            <div className="flex items-center gap-4 mt-3">
+              <a
+                href="https://www.musixmatch.com/album/Shannon-McHarg/Plastic-Cuppa-Fall-Single"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+              >
+                <img
+                  src={musixmatchLogo}
+                  alt="Musixmatch logo"
+                  className="w-6 h-6 object-contain"
+                />
+                <span className="text-foreground text-sm font-medium">Plastic Cuppa Fall Lyrics</span>
+              </a>
+              <a
+                href="https://www.youtube.com/playlist?list=PLgEDGGuOvK-naIiuRdTXk00-nZfz22J-Y"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+              >
+                <Youtube className="w-6 h-6" />
+                <span className="text-foreground text-sm font-medium">Plastic Cuppa Fall Videos</span>
+              </a>
+            </div>
           </div>
         </div>
 
