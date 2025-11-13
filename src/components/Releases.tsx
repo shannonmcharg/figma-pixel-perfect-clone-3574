@@ -20,7 +20,7 @@ export const Releases: React.FC = () => {
         
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
           <div className="flex flex-col items-start gap-3 flex-1">
-            <h3 className="text-foreground text-xl font-semibold text-left">Holidaze Pie</h3>
+            <h3 className="text-secondary text-2xl sm:text-3xl font-semibold mb-6 text-left">Holidaze Pie</h3>
             <iframe 
               src="https://show.co/f5VqiFX" 
               style={{ borderRadius: '12px', width: '100%' }} 
@@ -34,7 +34,7 @@ export const Releases: React.FC = () => {
           </div>
 
           <div className="flex flex-col items-start gap-3 flex-1">
-            <h3 className="text-foreground text-xl font-semibold text-left">Plastic Cuppa Fall</h3>
+            <h3 className="text-secondary text-2xl sm:text-3xl font-semibold mb-6 text-left">Plastic Cuppa Fall</h3>
             <iframe 
               data-testid="embed-iframe" 
               style={{ borderRadius: '12px', width: '100%' }} 
