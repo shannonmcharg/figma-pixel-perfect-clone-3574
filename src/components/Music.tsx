@@ -6,6 +6,7 @@ import youtubeLogo from '@/assets/youtube-logo.png';
 import amazonMusicLogo from '@/assets/amazon-music-logo.png';
 import tidalLogo from '@/assets/tidal-logo.png';
 import pandoraLogo from '@/assets/pandora-logo.png';
+import musixmatchLogo from '@/assets/musixmatch-logo.png';
 
 export const Music: React.FC = () => {
   const availableNowPlatforms = [
@@ -99,6 +100,19 @@ export const Music: React.FC = () => {
               loading="lazy"
               title="Plastic Cuppa Fall by Shannon McHarg"
             />
+            <a
+              href="https://www.musixmatch.com/album/Shannon-McHarg/Plastic-Cuppa-Fall-Single"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:opacity-80 transition-opacity mt-3"
+            >
+              <img
+                src={musixmatchLogo}
+                alt="Musixmatch logo"
+                className="w-6 h-6 object-contain"
+              />
+              <span className="text-foreground text-sm font-medium">Plastic Cuppa Fall Lyrics</span>
+            </a>
           </div>
         </div>
 
