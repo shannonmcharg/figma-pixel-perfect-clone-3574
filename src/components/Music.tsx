@@ -86,8 +86,9 @@ export const Music: React.FC = () => {
           <h3 className="text-secondary text-2xl sm:text-3xl font-semibold mb-6 text-left">
             Releases
           </h3>
-          <div className="flex justify-center lg:justify-start">
-            <iframe 
+          <div className="flex flex-col items-center lg:items-start gap-3">
+            <p className="text-foreground text-lg font-medium">Plastic Cuppa Fall</p>
+            <iframe
               style={{ border: 0, width: '100%', maxWidth: '400px', height: '241px' }} 
               src="https://bandcamp.com/EmbeddedPlayer/album=543644240/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" 
               seamless
