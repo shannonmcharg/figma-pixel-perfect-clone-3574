@@ -86,7 +86,7 @@ export const Music: React.FC = () => {
           <h3 className="text-secondary text-2xl sm:text-3xl font-semibold mb-6 text-left">
             Releases
           </h3>
-          <div className="flex flex-col items-center lg:items-start gap-3">
+          <div className="flex flex-col items-start gap-3">
             <h4 className="text-foreground text-lg font-medium text-left">Plastic Cuppa Fall</h4>
             <iframe 
               data-testid="embed-iframe" 
