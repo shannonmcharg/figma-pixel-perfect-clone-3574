@@ -1,8 +1,60 @@
 import React from 'react';
 import { Youtube } from 'lucide-react';
 import musixmatchLogo from '@/assets/musixmatch-logo.png';
+import bandcampLogo from '@/assets/bandcamp-logo.png';
+import spotifyLogo from '@/assets/spotify-logo.png';
+import appleMusicLogo from '@/assets/apple-music-logo.svg';
+import youtubeLogo from '@/assets/youtube-logo.png';
+import amazonMusicLogo from '@/assets/amazon-music-logo.png';
+import tidalLogo from '@/assets/tidal-logo.png';
+import pandoraLogo from '@/assets/pandora-logo.png';
 
 export const Releases: React.FC = () => {
+  const availableNowPlatforms = [
+    {
+      src: bandcampLogo,
+      alt: "Bandcamp platform logo",
+      href: "https://shannonmcharg.bandcamp.com/",
+      name: "Bandcamp"
+    },
+    {
+      src: spotifyLogo,
+      alt: "Spotify music streaming platform logo",
+      href: "https://open.spotify.com/artist/6JUDGvBQiLagw4rt8Gb9ct?si=BUe2A0UGQYmeuY00msZWhQ",
+      name: "Spotify"
+    },
+    {
+      src: appleMusicLogo,
+      alt: "Apple Music platform logo",
+      href: "https://music.apple.com/us/artist/shannon-mcharg/1844698992",
+      name: "Apple Music"
+    },
+    {
+      src: amazonMusicLogo,
+      alt: "Amazon Music platform logo",
+      href: "https://music.amazon.com/artists/B0FV4TVBRB/shannon-mcharg",
+      name: "Amazon Music"
+    },
+    {
+      src: youtubeLogo,
+      alt: "YouTube music platform logo",
+      href: "https://music.youtube.com/channel/UCCZrRcE-indAPT6rVBaTDmA?si=GSF_LU_6-LyfdmWh",
+      name: "YouTube"
+    },
+    {
+      src: tidalLogo,
+      alt: "Tidal music streaming platform logo",
+      href: "https://tidal.com/artist/67993245",
+      name: "Tidal"
+    },
+    {
+      src: pandoraLogo,
+      alt: "Pandora music streaming platform logo",
+      href: "https://www.pandora.com/artist/shannon-mcharg/ARthXx7797ZX5fK",
+      name: "Pandora"
+    }
+  ];
+
   return (
     <section 
       id="releases" 
@@ -18,7 +70,7 @@ export const Releases: React.FC = () => {
           <div className="absolute -bottom-4 left-0 w-16 h-1 bg-primary rounded-full"></div>
         </h2>
         
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 mb-12">
           <div className="flex flex-col items-start gap-3 flex-1">
             <h3 className="text-secondary text-2xl sm:text-3xl font-semibold mb-6 text-left">Holidaze Pie</h3>
             <iframe 
@@ -70,6 +122,34 @@ export const Releases: React.FC = () => {
                 <span className="text-foreground text-sm font-medium">Plastic Cuppa Fall Videos</span>
               </a>
             </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 className="text-secondary text-2xl sm:text-3xl font-semibold mb-6 text-left">
+            Streaming Platforms
+          </h3>
+          
+          <div className="flex items-center justify-start gap-4 sm:gap-6 lg:gap-8 flex-wrap">
+            {availableNowPlatforms.map((platform, index) => (
+              <a
+                key={index}
+                href={platform.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity"
+              >
+                <div className="relative aspect-square w-8 sm:w-10 lg:w-12 bg-transparent">
+                  <img
+                    src={platform.src}
+                    alt={platform.alt}
+                    className="w-full h-full object-contain bg-transparent"
+                    style={{ backgroundColor: 'transparent' }}
+                  />
+                </div>
+                <span className="text-xs text-muted-foreground">{platform.name}</span>
+              </a>
+            ))}
           </div>
         </div>
       </div>
