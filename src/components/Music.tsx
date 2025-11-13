@@ -88,6 +88,21 @@ export const Music: React.FC = () => {
           <h3 className="text-secondary text-2xl sm:text-3xl font-semibold mb-6 text-left">
             Releases
           </h3>
+          
+          <div className="flex flex-col items-start gap-3 mb-12">
+            <h4 className="text-foreground text-lg font-medium text-left">Holidaze Pie</h4>
+            <iframe 
+              src="https://show.co/f5VqiFX" 
+              style={{ borderRadius: '12px', width: '50%' }} 
+              height="380" 
+              frameBorder="0" 
+              allowFullScreen 
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+              loading="lazy"
+              title="Holidaze Pie by Shannon McHarg - Pre-save"
+            />
+          </div>
+
           <div className="flex flex-col items-start gap-3">
             <h4 className="text-foreground text-lg font-medium text-left">Plastic Cuppa Fall</h4>
             <iframe 
