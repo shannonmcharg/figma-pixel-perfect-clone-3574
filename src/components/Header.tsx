@@ -8,7 +8,7 @@ export const Header: React.FC<HeaderProps> = ({ activeSection = 'About' }) => {
   const navigationItems = [
     { name: 'Releases', href: '#releases' },
     { name: 'About', href: '#about' },
-    { name: 'Open Mics', href: '#open-mics' },
+    { name: 'Schedule', href: '#schedule' },
     { name: 'Connect', href: '#connect' }
   ];
 
