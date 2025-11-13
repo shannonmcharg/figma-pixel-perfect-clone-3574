@@ -9,7 +9,8 @@ export const Header: React.FC<HeaderProps> = ({ activeSection = 'About' }) => {
     { name: 'Releases', href: '#releases' },
     { name: 'About', href: '#about' },
     { name: 'Music', href: '#music' },
-    { name: 'Open Mics', href: '#open-mics' }
+    { name: 'Open Mics', href: '#open-mics' },
+    { name: 'Connect', href: '#connect' }
   ];
 
   return (

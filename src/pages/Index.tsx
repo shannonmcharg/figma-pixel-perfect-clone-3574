@@ -4,6 +4,7 @@ import { Releases } from '@/components/Releases';
 import { About } from '@/components/About';
 import { Music } from '@/components/Music';
 import { OpenMics } from '@/components/OpenMics';
+import { Connect } from '@/components/Connect';
 import { Footer } from '@/components/Footer';
 
 const Index = () => {
@@ -15,6 +16,7 @@ const Index = () => {
         <About />
         <Music />
         <OpenMics />
+        <Connect />
       </main>
       <Footer />
     </div>
