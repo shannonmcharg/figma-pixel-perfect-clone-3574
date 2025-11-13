@@ -86,6 +86,38 @@ export const Music: React.FC = () => {
         
         <div className="mb-12">
           <h3 className="text-secondary text-2xl sm:text-3xl font-semibold mb-6 text-left">
+            Listen Online
+          </h3>
+          
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
+            <div className="mb-8">
+            <div className="flex items-center justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8 flex-wrap">
+              {availableNowPlatforms.map((platform, index) => (
+                <a
+                  key={index}
+                  href={platform.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity"
+                >
+                  <div className="relative aspect-square w-8 sm:w-10 lg:w-12 bg-transparent">
+                    <img
+                      src={platform.src}
+                      alt={platform.alt}
+                      className="w-full h-full object-contain bg-transparent"
+                      style={{ backgroundColor: 'transparent' }}
+                    />
+                  </div>
+                  <span className="text-xs text-muted-foreground">{platform.name}</span>
+                </a>
+              ))}
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mb-12">
+          <h3 className="text-secondary text-2xl sm:text-3xl font-semibold mb-6 text-left">
             Releases
           </h3>
           
@@ -141,38 +173,6 @@ export const Music: React.FC = () => {
                   <span className="text-foreground text-sm font-medium">Plastic Cuppa Fall Videos</span>
                 </a>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="mb-12">
-          <h3 className="text-secondary text-2xl sm:text-3xl font-semibold mb-6 text-left">
-            Listen Online
-          </h3>
-          
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
-            <div className="mb-8">
-            <div className="flex items-center justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8 flex-wrap">
-              {availableNowPlatforms.map((platform, index) => (
-                <a
-                  key={index}
-                  href={platform.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity"
-                >
-                  <div className="relative aspect-square w-8 sm:w-10 lg:w-12 bg-transparent">
-                    <img
-                      src={platform.src}
-                      alt={platform.alt}
-                      className="w-full h-full object-contain bg-transparent"
-                      style={{ backgroundColor: 'transparent' }}
-                    />
-                  </div>
-                  <span className="text-xs text-muted-foreground">{platform.name}</span>
-                </a>
-              ))}
-            </div>
             </div>
           </div>
         </div>
