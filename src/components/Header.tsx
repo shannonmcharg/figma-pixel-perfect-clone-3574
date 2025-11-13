@@ -6,9 +6,10 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ activeSection = 'About' }) => {
   const navigationItems = [
+    { name: 'Releases', href: '#releases' },
     { name: 'About', href: '#about' },
     { name: 'Music', href: '#music' },
-    { name: 'Connect', href: '#connect' }
+    { name: 'Open Mics', href: '#open-mics' }
   ];
 
   return (
