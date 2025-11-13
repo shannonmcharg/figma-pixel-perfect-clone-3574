@@ -47,6 +47,12 @@ const Index = () => {
           const targetId = href.substring(1);
           const targetElement = document.getElementById(targetId);
           if (targetElement) {
+            // Immediately update active section on click
+            const section = sections.find(s => s.id === targetId);
+            if (section) {
+              setActiveSection(section.name);
+            }
+            
             const headerOffset = 100;
             const elementPosition = targetElement.getBoundingClientRect().top;
             const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
