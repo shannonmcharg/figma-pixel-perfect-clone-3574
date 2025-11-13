@@ -90,9 +90,8 @@ export const Music: React.FC = () => {
             <h4 className="text-foreground text-lg font-medium text-left">Plastic Cuppa Fall</h4>
             <iframe 
               data-testid="embed-iframe" 
-              style={{ borderRadius: '12px' }} 
+              style={{ borderRadius: '12px', width: '50%' }} 
               src="https://open.spotify.com/embed/album/56DFiwDg7cMfJS3kSk1eBg?utm_source=generator" 
-              width="100%" 
               height="380" 
               frameBorder="0" 
               allowFullScreen 
