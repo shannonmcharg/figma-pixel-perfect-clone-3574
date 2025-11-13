@@ -21,17 +21,10 @@ export const OpenMics: React.FC = () => {
         </p>
         
         <div className="w-full overflow-hidden rounded-xl shadow-xl bg-background">
-          {/* Calendar view for large screens */}
-          <iframe 
-            src="https://calendar.google.com/calendar/embed?src=9046c3d97084617d290368f2f7c45a98712d14f66d21259292756e559d4812b5%40group.calendar.google.com&ctz=America%2FNew_York&mode=MONTH"
-            className="hidden lg:block w-full h-[600px] border-0"
-            title="Open Mics Calendar - Calendar View"
-          />
-          {/* Agenda view for small/medium screens */}
           <iframe 
             src="https://calendar.google.com/calendar/embed?src=9046c3d97084617d290368f2f7c45a98712d14f66d21259292756e559d4812b5%40group.calendar.google.com&ctz=America%2FNew_York&mode=AGENDA"
-            className="lg:hidden w-full h-[400px] sm:h-[500px] border-0"
-            title="Open Mics Calendar - Agenda View"
+            className="w-full h-[400px] sm:h-[500px] lg:h-[600px] border-0"
+            title="Open Mics Calendar - Schedule View"
           />
         </div>
       </div>
