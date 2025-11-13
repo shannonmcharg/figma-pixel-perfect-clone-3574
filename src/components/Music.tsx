@@ -72,7 +72,7 @@ export const Music: React.FC = () => {
   return (
     <section 
       id="music" 
-      className="bg-muted py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8"
+      className="bg-muted py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8"
       aria-labelledby="music-heading"
     >
       <div className="max-w-7xl mx-auto">
