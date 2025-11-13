@@ -106,7 +106,7 @@ export const Music: React.FC = () => {
                 href="https://www.musixmatch.com/album/Shannon-McHarg/Plastic-Cuppa-Fall-Single"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+                className="flex items-center gap-2 hover:opacity-80 transition-opacity text-blue-600 underline"
               >
                 <img
                   src={musixmatchLogo}
@@ -119,7 +119,7 @@ export const Music: React.FC = () => {
                 href="https://www.youtube.com/playlist?list=PLgEDGGuOvK-naIiuRdTXk00-nZfz22J-Y"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+                className="flex items-center gap-2 hover:opacity-80 transition-opacity text-blue-600 underline"
               >
                 <Youtube className="w-6 h-6" />
                 <span className="text-foreground text-sm font-medium">Plastic Cuppa Fall Videos</span>
@@ -142,7 +142,7 @@ export const Music: React.FC = () => {
                   href={platform.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity"
+                  className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity text-blue-600 underline"
                 >
                   <div className="relative aspect-square w-8 sm:w-10 lg:w-12 bg-transparent">
                     <img
