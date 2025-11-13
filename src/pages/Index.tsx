@@ -20,6 +20,15 @@ const Index = () => {
     const handleScroll = () => {
       const headerOffset = 150;
       const scrollPosition = window.scrollY + headerOffset;
+      
+      // Check if we're at the bottom of the page
+      const isAtBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 50;
+      
+      if (isAtBottom) {
+        // Always highlight the last section when at bottom
+        setActiveSection('Connect');
+        return;
+      }
 
       // Find which section is currently in view
       for (let i = sections.length - 1; i >= 0; i--) {
