@@ -69,6 +69,10 @@ export const Releases: React.FC = () => {
           Music
           <div className="absolute -bottom-4 left-0 w-16 h-1 bg-primary rounded-full"></div>
         </h2>
+
+        <h2 className="text-secondary text-2xl sm:text-3xl lg:text-4xl font-semibold mb-8 text-left">
+          Releases
+        </h2>
         
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 mb-12">
           <div className="flex flex-col items-start gap-3 flex-1">
