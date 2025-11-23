@@ -70,50 +70,50 @@ export const Releases: React.FC = () => {
           <div className="absolute -bottom-4 left-0 w-16 h-1 bg-primary rounded-full"></div>
         </h2>
 
-        <div className="mb-12">
-          <h2 className="text-secondary text-2xl sm:text-3xl lg:text-4xl font-semibold mb-6 text-left">
-            Stream My Music
-          </h2>
-          <p className="text-foreground text-base mb-6">
-            My artist page on your favorite streaming platforms. Don't see your favorite platform?{' '}
-            <a 
-              href="https://cdbaby.com/music-distribution/digital-distribution-partners/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:opacity-80 transition-opacity"
-            >
-              Full list of platforms
-            </a>
-          </p>
-          
-          <div className="flex items-center justify-start gap-4 sm:gap-6 lg:gap-8 flex-wrap">
-            {availableNowPlatforms.map((platform, index) => (
-              <a
-                key={index}
-                href={platform.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity"
-              >
-                <div className="relative aspect-square w-8 sm:w-10 lg:w-12 bg-transparent">
-                  <img
-                    src={platform.src}
-                    alt={platform.alt}
-                    className="w-full h-full object-contain bg-transparent"
-                    style={{ backgroundColor: 'transparent' }}
-                  />
-                </div>
-                <span className="text-xs text-muted-foreground">{platform.name}</span>
-              </a>
-            ))}
-          </div>
-        </div>
-
         <h2 className="text-secondary text-2xl sm:text-3xl lg:text-4xl font-semibold mb-8 text-left">
           Releases
         </h2>
         
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 mb-12">
+          <div className="flex flex-col items-start gap-3 flex-1">
+            <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-6 text-left">Stream My Music</h3>
+            <div className="w-full">
+              <p className="text-foreground text-base mb-6">
+                My artist page on your favorite streaming platforms. Don't see your favorite platform?{' '}
+                <a 
+                  href="https://cdbaby.com/music-distribution/digital-distribution-partners/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:opacity-80 transition-opacity"
+                >
+                  Full list of platforms
+                </a>
+              </p>
+              
+              <div className="flex items-center justify-start gap-4 sm:gap-6 flex-wrap">
+                {availableNowPlatforms.map((platform, index) => (
+                  <a
+                    key={index}
+                    href={platform.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity"
+                  >
+                    <div className="relative aspect-square w-10 lg:w-12 bg-transparent">
+                      <img
+                        src={platform.src}
+                        alt={platform.alt}
+                        className="w-full h-full object-contain bg-transparent"
+                        style={{ backgroundColor: 'transparent' }}
+                      />
+                    </div>
+                    <span className="text-xs text-muted-foreground">{platform.name}</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+
           <div className="flex flex-col items-start gap-3 flex-1">
             <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-6 text-left">Holidaze Pie</h3>
             <iframe
