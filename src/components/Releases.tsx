@@ -144,6 +144,9 @@ export const Releases: React.FC = () => {
           <h3 className="text-secondary text-2xl sm:text-3xl font-semibold mb-6 text-left">
             Streaming Platforms
           </h3>
+          <p className="text-foreground text-base mb-6">
+            My artist page on your favorite streaming platforms.
+          </p>
           
           <div className="flex items-center justify-start gap-4 sm:gap-6 lg:gap-8 flex-wrap">
             {availableNowPlatforms.map((platform, index) => (
