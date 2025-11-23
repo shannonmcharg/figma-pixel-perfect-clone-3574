@@ -9,6 +9,7 @@ import youtubeLogo from '@/assets/youtube-logo.png';
 import amazonMusicLogo from '@/assets/amazon-music-logo.png';
 import tidalLogo from '@/assets/tidal-logo.png';
 import pandoraLogo from '@/assets/pandora-logo.png';
+import deezerLogo from '@/assets/deezer-logo.png';
 
 export const Releases: React.FC = () => {
   const availableNowPlatforms = [
@@ -53,6 +54,12 @@ export const Releases: React.FC = () => {
       alt: "Pandora music streaming platform logo",
       href: "https://www.pandora.com/artist/shannon-mcharg/ARthXx7797ZX5fK",
       name: "Pandora"
+    },
+    {
+      src: deezerLogo,
+      alt: "Deezer music streaming platform logo",
+      href: "https://www.deezer.com/us/artist/349913012",
+      name: "Deezer"
     }
   ];
 
