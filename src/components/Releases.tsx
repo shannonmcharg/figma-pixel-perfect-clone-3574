@@ -86,16 +86,16 @@ export const Releases: React.FC = () => {
             </a>
           </p>
           
-          <div className="flex items-center justify-start gap-4 sm:gap-6 lg:gap-8 flex-wrap">
+          <div className="flex flex-col gap-3">
             {availableNowPlatforms.map((platform, index) => (
               <a
                 key={index}
                 href={platform.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity"
+                className="flex items-center gap-3 hover:opacity-80 transition-opacity"
               >
-                <div className="relative aspect-square w-8 sm:w-10 lg:w-12 bg-transparent">
+                <div className="relative aspect-square w-6 h-6 bg-transparent flex-shrink-0">
                   <img
                     src={platform.src}
                     alt={platform.alt}
@@ -103,7 +103,7 @@ export const Releases: React.FC = () => {
                     style={{ backgroundColor: 'transparent' }}
                   />
                 </div>
-                <span className="text-xs text-muted-foreground">{platform.name}</span>
+                <span className="text-sm text-foreground">{platform.name}</span>
               </a>
             ))}
           </div>
