@@ -15,16 +15,10 @@ import qobuzLogo from '@/assets/qobuz-logo.png';
 export const Releases: React.FC = () => {
   const availableNowPlatforms = [
     {
-      src: bandcampLogo,
-      alt: "Bandcamp platform logo",
-      href: "https://shannonmcharg.bandcamp.com/",
-      name: "Bandcamp"
-    },
-    {
-      src: spotifyLogo,
-      alt: "Spotify music streaming platform logo",
-      href: "https://open.spotify.com/artist/6JUDGvBQiLagw4rt8Gb9ct?si=BUe2A0UGQYmeuY00msZWhQ",
-      name: "Spotify"
+      src: amazonMusicLogo,
+      alt: "Amazon Music platform logo",
+      href: "https://music.amazon.com/artists/B0FV4TVBRB/shannon-mcharg",
+      name: "Amazon Music"
     },
     {
       src: appleMusicLogo,
@@ -33,28 +27,10 @@ export const Releases: React.FC = () => {
       name: "Apple Music"
     },
     {
-      src: amazonMusicLogo,
-      alt: "Amazon Music platform logo",
-      href: "https://music.amazon.com/artists/B0FV4TVBRB/shannon-mcharg",
-      name: "Amazon Music"
-    },
-    {
-      src: youtubeLogo,
-      alt: "YouTube music platform logo",
-      href: "https://music.youtube.com/channel/UCCZrRcE-indAPT6rVBaTDmA?si=GSF_LU_6-LyfdmWh",
-      name: "YouTube"
-    },
-    {
-      src: tidalLogo,
-      alt: "Tidal music streaming platform logo",
-      href: "https://tidal.com/artist/67993245",
-      name: "Tidal"
-    },
-    {
-      src: pandoraLogo,
-      alt: "Pandora music streaming platform logo",
-      href: "https://www.pandora.com/artist/shannon-mcharg/ARthXx7797ZX5fK",
-      name: "Pandora"
+      src: bandcampLogo,
+      alt: "Bandcamp platform logo",
+      href: "https://shannonmcharg.bandcamp.com/",
+      name: "Bandcamp"
     },
     {
       src: deezerLogo,
@@ -63,10 +39,34 @@ export const Releases: React.FC = () => {
       name: "Deezer"
     },
     {
+      src: pandoraLogo,
+      alt: "Pandora music streaming platform logo",
+      href: "https://www.pandora.com/artist/shannon-mcharg/ARthXx7797ZX5fK",
+      name: "Pandora"
+    },
+    {
       src: qobuzLogo,
       alt: "Qobuz music streaming platform logo",
       href: "https://play.qobuz.com/artist/28857460",
       name: "Qobuz"
+    },
+    {
+      src: spotifyLogo,
+      alt: "Spotify music streaming platform logo",
+      href: "https://open.spotify.com/artist/6JUDGvBQiLagw4rt8Gb9ct?si=BUe2A0UGQYmeuY00msZWhQ",
+      name: "Spotify"
+    },
+    {
+      src: tidalLogo,
+      alt: "Tidal music streaming platform logo",
+      href: "https://tidal.com/artist/67993245",
+      name: "Tidal"
+    },
+    {
+      src: youtubeLogo,
+      alt: "YouTube music platform logo",
+      href: "https://music.youtube.com/channel/UCCZrRcE-indAPT6rVBaTDmA?si=GSF_LU_6-LyfdmWh",
+      name: "YouTube"
     }
   ];
 
