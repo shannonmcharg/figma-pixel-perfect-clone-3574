@@ -211,7 +211,7 @@ export const Releases: React.FC = () => {
                 loading="lazy"
                 title="Holidaze Pie by Shannon McHarg - Pre-save"
               />
-              <div className="flex items-center gap-4 mt-3">
+              <div className="flex flex-col gap-2 mt-3">
                 <a
                   href="https://www.musixmatch.com/album/Shannon-McHarg/Holidaze-Pie-EP"
                   target="_blank"
@@ -243,7 +243,7 @@ export const Releases: React.FC = () => {
                 loading="lazy"
                 title="Plastic Cuppa Fall by Shannon McHarg"
               />
-              <div className="flex items-center gap-4 mt-3">
+              <div className="flex flex-col gap-2 mt-3">
                 <a
                   href="https://www.musixmatch.com/album/Shannon-McHarg/Plastic-Cuppa-Fall-Single"
                   target="_blank"
