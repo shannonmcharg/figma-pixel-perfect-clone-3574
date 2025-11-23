@@ -110,7 +110,7 @@ export const Releases: React.FC = () => {
                         style={{ backgroundColor: 'transparent' }}
                       />
                     </div>
-                    <span className="text-sm text-foreground">{platform.name}</span>
+                    <span className="text-sm text-foreground underline">{platform.name}</span>
                   </a>
                 ))}
               </div>
