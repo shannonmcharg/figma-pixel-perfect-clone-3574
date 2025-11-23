@@ -7,11 +7,11 @@ import { Connect } from '@/components/Connect';
 import { Footer } from '@/components/Footer';
 
 const Index = () => {
-  const [activeSection, setActiveSection] = useState('Releases');
+  const [activeSection, setActiveSection] = useState('Music');
 
   useEffect(() => {
     const sections = [
-      { id: 'releases', name: 'Releases' },
+      { id: 'releases', name: 'Music' },
       { id: 'about', name: 'About' },
       { id: 'open-mics', name: 'Open Mics' },
       { id: 'connect', name: 'Connect' }
