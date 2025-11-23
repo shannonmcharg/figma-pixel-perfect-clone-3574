@@ -136,7 +136,7 @@ export const Releases: React.FC = () => {
             </CardContent>
           </Card>
 
-          <Card className="border border-border shadow-sm md:col-span-2 lg:col-span-2">
+          <Card className="border border-border shadow-sm md:col-span-2 lg:col-span-3">
             <CardContent className="p-6">
               <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">Open Mics</h3>
               <p className="text-foreground text-sm mb-4 text-left">
@@ -146,7 +146,7 @@ export const Releases: React.FC = () => {
               <div className="w-full overflow-hidden rounded-xl shadow-xl bg-background">
                 <iframe 
                   src="https://calendar.google.com/calendar/embed?src=9046c3d97084617d290368f2f7c45a98712d14f66d21259292756e559d4812b5%40group.calendar.google.com&ctz=America%2FNew_York&mode=AGENDA"
-                  className="w-full h-[400px] sm:h-[500px] border-0"
+                  className="w-full h-[350px] sm:h-[400px] border-0"
                   title="Open Mics Calendar - Schedule View"
                 />
               </div>
