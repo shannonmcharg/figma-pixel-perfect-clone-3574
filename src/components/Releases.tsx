@@ -83,6 +83,21 @@ export const Releases: React.FC = () => {
               loading="lazy"
               title="Holidaze Pie by Shannon McHarg - Pre-save"
             />
+            <div className="flex items-center gap-4 mt-3">
+              <a
+                href="https://www.musixmatch.com/album/Shannon-McHarg/Holidaze-Pie-EP"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:opacity-80 transition-opacity underline"
+              >
+                <img
+                  src={musixmatchLogo}
+                  alt="Musixmatch logo"
+                  className="w-6 h-6 object-contain"
+                />
+                <span className="text-foreground text-sm font-medium">Holidaze Pie Lyrics</span>
+              </a>
+            </div>
           </div>
 
           <div className="flex flex-col items-start gap-3 flex-1">
