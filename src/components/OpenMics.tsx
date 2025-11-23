@@ -17,7 +17,7 @@ export const OpenMics: React.FC = () => {
         </h2>
         
         <p className="text-foreground text-base mb-4 text-left">
-          This is where you can see me play.
+          Where you can see me play.
         </p>
         
         <div className="w-full overflow-hidden rounded-xl shadow-xl bg-background">
