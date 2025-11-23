@@ -72,7 +72,7 @@ export const Releases: React.FC = () => {
 
         <div className="mb-12">
           <h2 className="text-secondary text-2xl sm:text-3xl lg:text-4xl font-semibold mb-6 text-left">
-            Streaming Platforms
+            Stream My Music
           </h2>
           <p className="text-foreground text-base mb-6">
             My artist page on your favorite streaming platforms.
