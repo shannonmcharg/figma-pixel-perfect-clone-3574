@@ -89,6 +89,9 @@ export const Releases: React.FC = () => {
           <Card className="border border-border shadow-sm">
             <CardContent className="p-6">
               <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">Stream My Music</h3>
+              <p className="text-foreground text-sm mb-6">
+                My artist page on your favorite streaming platforms.
+              </p>
               
               <div className="flex flex-col gap-3 mb-4">
                 {availableNowPlatforms.map((platform, index) => (
