@@ -177,7 +177,7 @@ export const Releases: React.FC = () => {
               rel="noopener noreferrer"
               className="underline hover:opacity-80 transition-opacity"
             >
-              Full list of platforms.
+              Full list of platforms
             </a>
           </p>
         </div>
