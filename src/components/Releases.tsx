@@ -136,6 +136,68 @@ export const Releases: React.FC = () => {
             </CardContent>
           </Card>
 
+          <Card className="border border-border shadow-sm md:col-span-2 lg:col-span-2">
+            <CardContent className="p-6">
+              <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">Open Mics</h3>
+              <p className="text-foreground text-sm mb-4 text-left">
+                Where you can see me play.
+              </p>
+              
+              <div className="w-full overflow-hidden rounded-xl shadow-xl bg-background">
+                <iframe 
+                  src="https://calendar.google.com/calendar/embed?src=9046c3d97084617d290368f2f7c45a98712d14f66d21259292756e559d4812b5%40group.calendar.google.com&ctz=America%2FNew_York&mode=AGENDA"
+                  className="w-full h-[400px] sm:h-[500px] border-0"
+                  title="Open Mics Calendar - Schedule View"
+                />
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-0">
+          <Card className="border border-border shadow-sm">
+            <CardContent className="p-6">
+              <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">Stream My Music</h3>
+              <p className="text-foreground text-sm mb-6">
+                My artist page on your favorite streaming platforms.
+              </p>
+              
+              <div className="flex flex-col gap-3 mb-4">
+                {availableNowPlatforms.map((platform, index) => (
+                  <a
+                    key={index}
+                    href={platform.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 hover:opacity-80 transition-opacity"
+                  >
+                    <div className="relative aspect-square w-6 h-6 bg-transparent flex-shrink-0">
+                      <img
+                        src={platform.src}
+                        alt={platform.alt}
+                        className="w-full h-full object-contain bg-transparent"
+                        style={{ backgroundColor: 'transparent' }}
+                      />
+                    </div>
+                    <span className="text-sm text-foreground underline">{platform.name}</span>
+                  </a>
+                ))}
+              </div>
+
+              <p className="text-foreground text-xs">
+                Don't see your favorite platform?{' '}
+                <a 
+                  href="https://cdbaby.com/music-distribution/digital-distribution-partners/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:opacity-80 transition-opacity"
+                >
+                  Full list of platforms
+                </a>
+              </p>
+            </CardContent>
+          </Card>
+
           <Card className="border border-border shadow-sm">
             <CardContent className="p-6">
               <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">Holidaze Pie</h3>
