@@ -4,7 +4,7 @@ export const OpenMics: React.FC = () => {
   return (
     <section 
       id="open-mics" 
-      className="bg-background py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8"
+      className="bg-background py-6 sm:py-8 lg:py-10 px-4 sm:px-6 lg:px-8"
       aria-labelledby="open-mics-heading"
     >
       <div className="max-w-7xl mx-auto">

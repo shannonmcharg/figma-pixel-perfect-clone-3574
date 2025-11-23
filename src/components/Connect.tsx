@@ -21,7 +21,7 @@ export const Connect: React.FC = () => {
   return (
     <section 
       id="connect"
-      className="bg-muted py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8"
+      className="bg-muted py-6 sm:py-8 lg:py-10 px-4 sm:px-6 lg:px-8"
       aria-labelledby="connect-heading"
     >
       <div className="max-w-7xl mx-auto">
