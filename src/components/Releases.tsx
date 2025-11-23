@@ -10,6 +10,7 @@ import amazonMusicLogo from '@/assets/amazon-music-logo.png';
 import tidalLogo from '@/assets/tidal-logo.png';
 import pandoraLogo from '@/assets/pandora-logo.png';
 import deezerLogo from '@/assets/deezer-logo.png';
+import iheartradioLogo from '@/assets/iheartradio-logo.png';
 import qobuzLogo from '@/assets/qobuz-logo.png';
 
 export const Releases: React.FC = () => {
@@ -37,6 +38,12 @@ export const Releases: React.FC = () => {
       alt: "Deezer music streaming platform logo",
       href: "https://www.deezer.com/us/artist/349913012",
       name: "Deezer"
+    },
+    {
+      src: iheartradioLogo,
+      alt: "iHeart Radio music streaming platform logo",
+      href: "https://www.iheart.com/artist/shannon-mcharg-48243953/",
+      name: "iHeart Radio"
     },
     {
       src: pandoraLogo,
