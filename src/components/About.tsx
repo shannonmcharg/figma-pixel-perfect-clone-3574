@@ -9,7 +9,7 @@ import * as AccordionPrimitive from "@radix-ui/react-accordion";
 
 export const About: React.FC = () => {
   return (
-    <section id="about" className="py-4 sm:py-6 lg:py-8 px-4 sm:px-6 lg:px-6 animate-slide-up" aria-labelledby="about-heading">
+    <section id="about" className="pt-2 sm:pt-3 lg:pt-4 pb-4 sm:pb-6 lg:pb-8 px-4 sm:px-6 lg:px-6 animate-slide-up" aria-labelledby="about-heading">
       <div className="flex flex-col lg:flex-row justify-between items-start gap-6 sm:gap-8 lg:gap-10 max-w-7xl mx-auto">
         <div className="w-full lg:w-auto lg:min-w-60 lg:max-w-[628px] lg:flex-1 group order-1 lg:order-2">
           <img
