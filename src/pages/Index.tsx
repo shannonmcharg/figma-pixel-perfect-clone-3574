@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Header } from '@/components/Header';
 import { Releases } from '@/components/Releases';
 import { About } from '@/components/About';
+import { OpenMics } from '@/components/OpenMics';
 import { Connect } from '@/components/Connect';
 import { Footer } from '@/components/Footer';
 
@@ -12,6 +13,7 @@ const Index = () => {
     const sections = [
       { id: 'releases', name: 'Music' },
       { id: 'about', name: 'About' },
+      { id: 'open-mics', name: 'Open Mics' },
       { id: 'connect', name: 'Connect' }
     ];
 
@@ -111,6 +113,7 @@ const Index = () => {
       <main className="space-y-0">
         <Releases />
         <About />
+        <OpenMics />
         <Connect />
       </main>
       <Footer />

@@ -92,7 +92,7 @@ export const Releases: React.FC = () => {
           <div className="absolute -bottom-4 left-0 w-16 h-1 bg-primary rounded-full"></div>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-0">
           <Card className="border border-border shadow-sm">
             <CardContent className="p-6">
               <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">Stream My Music</h3>
@@ -135,26 +135,6 @@ export const Releases: React.FC = () => {
               </p>
             </CardContent>
           </Card>
-
-          <Card className="border border-border shadow-sm">
-            <CardContent className="p-6">
-              <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">Open Mics</h3>
-              <p className="text-foreground text-sm mb-4 text-left">
-                Where you can see me play.
-              </p>
-              
-              <div className="w-full overflow-hidden rounded-xl shadow-xl bg-background">
-                <iframe 
-                  src="https://calendar.google.com/calendar/embed?src=9046c3d97084617d290368f2f7c45a98712d14f66d21259292756e559d4812b5%40group.calendar.google.com&ctz=America%2FNew_York&mode=AGENDA"
-                  className="w-full h-[380px] border-0"
-                  title="Open Mics Calendar - Schedule View"
-                />
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-0">
           <Card className="border border-border shadow-sm">
             <CardContent className="p-6">
               <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">Stream My Music</h3>
