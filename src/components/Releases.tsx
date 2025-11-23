@@ -10,6 +10,7 @@ import amazonMusicLogo from '@/assets/amazon-music-logo.png';
 import tidalLogo from '@/assets/tidal-logo.png';
 import pandoraLogo from '@/assets/pandora-logo.png';
 import deezerLogo from '@/assets/deezer-logo.png';
+import qobuzLogo from '@/assets/qobuz-logo.png';
 
 export const Releases: React.FC = () => {
   const availableNowPlatforms = [
@@ -60,6 +61,12 @@ export const Releases: React.FC = () => {
       alt: "Deezer music streaming platform logo",
       href: "https://www.deezer.com/us/artist/349913012",
       name: "Deezer"
+    },
+    {
+      src: qobuzLogo,
+      alt: "Qobuz music streaming platform logo",
+      href: "https://play.qobuz.com/artist/28857460",
+      name: "Qobuz"
     }
   ];
 
