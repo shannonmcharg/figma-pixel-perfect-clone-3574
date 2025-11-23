@@ -161,7 +161,7 @@ export const Releases: React.FC = () => {
                     alt="Musixmatch logo"
                     className="w-6 h-6 object-contain"
                   />
-                  <span className="text-foreground text-sm font-medium">Holidaze Pie Lyrics</span>
+                  <span className="text-foreground text-sm font-medium">Holidaze Pie lyrics</span>
                 </a>
               </div>
             </CardContent>
@@ -193,7 +193,7 @@ export const Releases: React.FC = () => {
                     alt="Musixmatch logo"
                     className="w-6 h-6 object-contain"
                   />
-                  <span className="text-foreground text-sm font-medium">Plastic Cuppa Fall Lyrics</span>
+                  <span className="text-foreground text-sm font-medium">Plastic Cuppa Fall lyrics</span>
                 </a>
                 <a
                   href="https://www.youtube.com/playlist?list=PLgEDGGuOvK-naIiuRdTXk00-nZfz22J-Y"
@@ -202,7 +202,7 @@ export const Releases: React.FC = () => {
                   className="flex items-center gap-2 hover:opacity-80 transition-opacity underline"
                 >
                   <Youtube className="w-6 h-6" />
-                  <span className="text-foreground text-sm font-medium">Plastic Cuppa Fall Videos</span>
+                  <span className="text-foreground text-sm font-medium">Plastic Cuppa Fall videos</span>
                 </a>
               </div>
             </CardContent>
