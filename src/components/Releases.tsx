@@ -75,7 +75,15 @@ export const Releases: React.FC = () => {
             Stream My Music
           </h2>
           <p className="text-foreground text-base mb-6">
-            My artist page on your favorite streaming platforms.
+            My artist page on your favorite streaming platforms. Don't see your favorite platform?{' '}
+            <a 
+              href="https://cdbaby.com/music-distribution/digital-distribution-partners/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:opacity-80 transition-opacity"
+            >
+              Full list of platforms
+            </a>
           </p>
           
           <div className="flex items-center justify-start gap-4 sm:gap-6 lg:gap-8 flex-wrap">
@@ -99,17 +107,6 @@ export const Releases: React.FC = () => {
               </a>
             ))}
           </div>
-          <p className="text-muted-foreground text-sm mt-6">
-            Don't see your favorite platform?{' '}
-            <a 
-              href="https://cdbaby.com/music-distribution/digital-distribution-partners/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:opacity-80 transition-opacity"
-            >
-              Full list of platforms
-            </a>
-          </p>
         </div>
 
         <h2 className="text-secondary text-2xl sm:text-3xl lg:text-4xl font-semibold mb-8 text-left">
