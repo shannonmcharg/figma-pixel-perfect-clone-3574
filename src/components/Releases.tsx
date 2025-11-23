@@ -66,7 +66,7 @@ export const Releases: React.FC = () => {
           id="releases-heading"
           className="text-secondary text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight mb-8 sm:mb-12 lg:mb-16 relative text-left"
         >
-          Releases
+          Music
           <div className="absolute -bottom-4 left-0 w-16 h-1 bg-primary rounded-full"></div>
         </h2>
         
