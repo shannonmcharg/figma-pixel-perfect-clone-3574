@@ -80,7 +80,7 @@ export const Releases: React.FC = () => {
   return (
     <section 
       id="releases" 
-      className="bg-background py-6 sm:py-8 lg:py-10 px-4 sm:px-6 lg:px-8"
+      className="bg-background py-4 sm:py-6 lg:py-8 px-4 sm:px-6 lg:px-8"
       aria-labelledby="releases-heading"
     >
       <div className="max-w-7xl mx-auto">
