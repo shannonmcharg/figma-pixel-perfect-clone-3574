@@ -140,14 +140,15 @@ export const Releases: React.FC = () => {
             <CardContent className="p-6">
               <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">Holidaze Pie</h3>
               <iframe
-                src="https://show.co/f5VqiFX" 
-                style={{ borderRadius: '12px', width: '100%' }} 
-                height="380" 
-                frameBorder="0" 
-                allowFullScreen 
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                data-testid="embed-iframe"
+                style={{ borderRadius: '12px', width: '100%' }}
+                src="https://open.spotify.com/embed/album/7ii95Ab1L61yEfAw52cIwL?utm_source=generator"
+                height="352"
+                frameBorder="0"
+                allowFullScreen
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
-                title="Holidaze Pie by Shannon McHarg - Pre-save"
+                title="Holidaze Pie by Shannon McHarg"
               />
               <div className="flex flex-col gap-2 mt-3">
                 <a
