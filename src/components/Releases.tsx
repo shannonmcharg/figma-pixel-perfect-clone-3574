@@ -163,6 +163,15 @@ export const Releases: React.FC = () => {
                   />
                   <span className="text-foreground text-sm font-medium">Holidaze Pie lyrics</span>
                 </a>
+                <a
+                  href="https://www.youtube.com/playlist?list=PLgEDGGuOvK-kZdEqWSE86048ZxWvCJzYf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 hover:opacity-80 transition-opacity underline"
+                >
+                  <Youtube className="w-6 h-6" />
+                  <span className="text-foreground text-sm font-medium">Holidaze Pie videos</span>
+                </a>
               </div>
             </CardContent>
           </Card>
