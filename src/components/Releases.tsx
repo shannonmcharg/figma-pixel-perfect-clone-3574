@@ -143,7 +143,7 @@ export const Releases: React.FC = () => {
                 data-testid="embed-iframe"
                 style={{ borderRadius: '12px', width: '100%' }}
                 src="https://open.spotify.com/embed/album/7ii95Ab1L61yEfAw52cIwL?utm_source=generator"
-                height="352"
+                height="380"
                 frameBorder="0"
                 allowFullScreen
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
