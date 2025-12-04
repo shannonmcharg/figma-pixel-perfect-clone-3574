@@ -141,15 +141,13 @@ export const Releases: React.FC = () => {
               <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">Holidaze Pie</h3>
               <iframe
                 data-testid="embed-iframe"
-                style={{ borderRadius: '12px', width: '100%' }}
-                src="https://open.spotify.com/embed/album/7ii95Ab1L61yEfAw52cIwL?utm_source=generator"
-                height="380"
-                frameBorder="0"
-                allowFullScreen
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-                title="Holidaze Pie by Shannon McHarg"
-              />
+                style={{ border: 0, width: '100%', height: '588px' }}
+                src="https://bandcamp.com/EmbeddedPlayer/album=510068802/size=large/bgcol=ffffff/linkcol=de270f/transparent=true/"
+                seamless
+                title="Holidaze Pie by Shannon McHarg on Bandcamp"
+              >
+                <a href="https://shannonmcharg.bandcamp.com/album/holidaze-pie">Holidaze Pie by Shannon McHarg</a>
+              </iframe>
               <div className="flex flex-col gap-2 mt-3">
                 <a
                   href="https://www.musixmatch.com/album/Shannon-McHarg/Holidaze-Pie-EP"
