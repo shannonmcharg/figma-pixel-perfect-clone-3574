@@ -136,9 +136,9 @@ export const Releases: React.FC = () => {
             </CardContent>
           </Card>
 
-          <Card className="border border-border shadow-sm">
+          <Card className="border border-border shadow-sm" style={{ backgroundColor: '#981D17' }}>
             <CardContent className="p-6">
-              <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">Holidaze Pie</h3>
+              <h3 className="text-white text-xl sm:text-2xl font-semibold mb-4 text-left">Holidaze Pie</h3>
               <iframe
                 data-testid="embed-iframe"
                 style={{ border: 0, width: '100%', height: '650px' }}
@@ -153,23 +153,23 @@ export const Releases: React.FC = () => {
                   href="https://www.musixmatch.com/album/Shannon-McHarg/Holidaze-Pie-EP"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 hover:opacity-80 transition-opacity underline"
+                  className="flex items-center gap-2 hover:opacity-80 transition-opacity underline decoration-white"
                 >
                   <img
                     src={musixmatchLogo}
                     alt="Musixmatch logo"
-                    className="w-6 h-6 object-contain"
+                    className="w-6 h-6 object-contain brightness-0 invert"
                   />
-                  <span className="text-foreground text-sm font-medium">Holidaze Pie lyrics</span>
+                  <span className="text-white text-sm font-medium">Holidaze Pie lyrics</span>
                 </a>
                 <a
                   href="https://www.youtube.com/playlist?list=PLgEDGGuOvK-kZdEqWSE86048ZxWvCJzYf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 hover:opacity-80 transition-opacity underline"
+                  className="flex items-center gap-2 hover:opacity-80 transition-opacity underline decoration-white"
                 >
-                  <Youtube className="w-6 h-6" />
-                  <span className="text-foreground text-sm font-medium">Holidaze Pie videos</span>
+                  <Youtube className="w-6 h-6 text-white" />
+                  <span className="text-white text-sm font-medium">Holidaze Pie videos</span>
                 </a>
               </div>
             </CardContent>
