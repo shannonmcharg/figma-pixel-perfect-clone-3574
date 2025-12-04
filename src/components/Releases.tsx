@@ -142,7 +142,7 @@ export const Releases: React.FC = () => {
               <iframe
                 data-testid="embed-iframe"
                 style={{ border: 0, width: '100%', height: '650px' }}
-                src="https://bandcamp.com/EmbeddedPlayer/album=510068802/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/"
+                src="https://bandcamp.com/EmbeddedPlayer/album=510068802/size=large/bgcol=ffffff/linkcol=0A5176/transparent=true/"
                 seamless
                 title="Holidaze Pie by Shannon McHarg on Bandcamp"
               >
@@ -181,7 +181,7 @@ export const Releases: React.FC = () => {
               <iframe
                 data-testid="embed-iframe"
                 style={{ border: 0, width: '100%', height: '650px' }}
-                src="https://bandcamp.com/EmbeddedPlayer/album=543644240/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/"
+                src="https://bandcamp.com/EmbeddedPlayer/album=543644240/size=large/bgcol=ffffff/linkcol=0A5176/transparent=true/"
                 seamless
                 title="Plastic Cuppa Fall by Shannon McHarg on Bandcamp"
               >
