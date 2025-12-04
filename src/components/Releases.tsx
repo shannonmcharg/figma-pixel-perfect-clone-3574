@@ -141,7 +141,7 @@ export const Releases: React.FC = () => {
               <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">Holidaze Pie</h3>
               <iframe
                 data-testid="embed-iframe"
-                style={{ border: 0, width: '100%', height: '600px' }}
+                style={{ border: 0, width: '100%', height: '650px' }}
                 src="https://bandcamp.com/EmbeddedPlayer/album=510068802/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/"
                 seamless
                 title="Holidaze Pie by Shannon McHarg on Bandcamp"
