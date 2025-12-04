@@ -180,7 +180,7 @@ export const Releases: React.FC = () => {
               <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">Plastic Cuppa Fall</h3>
               <iframe
                 data-testid="embed-iframe"
-                style={{ border: 0, width: '100%', height: '500px' }}
+                style={{ border: 0, width: '100%', height: '600px' }}
                 src="https://bandcamp.com/EmbeddedPlayer/album=543644240/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/"
                 seamless
                 title="Plastic Cuppa Fall by Shannon McHarg on Bandcamp"
