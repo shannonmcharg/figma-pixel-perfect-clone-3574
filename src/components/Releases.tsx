@@ -175,13 +175,13 @@ export const Releases: React.FC = () => {
             </CardContent>
           </Card>
 
-          <Card className="border border-border shadow-sm">
+          <Card className="border border-border shadow-sm" style={{ backgroundColor: '#8D3500' }}>
             <CardContent className="p-6">
-              <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">Plastic Cuppa Fall</h3>
+              <h3 className="text-white text-xl sm:text-2xl font-semibold mb-4 text-left">Plastic Cuppa Fall</h3>
               <iframe
                 data-testid="embed-iframe"
                 style={{ border: 0, width: '100%', height: '650px' }}
-                src="https://bandcamp.com/EmbeddedPlayer/album=543644240/size=large/bgcol=8D3500/linkcol=0A5176/transparent=true/"
+                src="https://bandcamp.com/EmbeddedPlayer/album=543644240/size=large/bgcol=8D3500/linkcol=ffffff/transparent=true/"
                 seamless
                 title="Plastic Cuppa Fall by Shannon McHarg on Bandcamp"
               >
@@ -197,9 +197,9 @@ export const Releases: React.FC = () => {
                   <img
                     src={musixmatchLogo}
                     alt="Musixmatch logo"
-                    className="w-6 h-6 object-contain"
+                    className="w-6 h-6 object-contain brightness-0 invert"
                   />
-                  <span className="text-foreground text-sm font-medium">Plastic Cuppa Fall lyrics</span>
+                  <span className="text-white text-sm font-medium">Plastic Cuppa Fall lyrics</span>
                 </a>
                 <a
                   href="https://www.youtube.com/playlist?list=PLgEDGGuOvK-naIiuRdTXk00-nZfz22J-Y"
@@ -207,8 +207,8 @@ export const Releases: React.FC = () => {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 hover:opacity-80 transition-opacity underline"
                 >
-                  <Youtube className="w-6 h-6" />
-                  <span className="text-foreground text-sm font-medium">Plastic Cuppa Fall videos</span>
+                  <Youtube className="w-6 h-6 text-white" />
+                  <span className="text-white text-sm font-medium">Plastic Cuppa Fall videos</span>
                 </a>
               </div>
             </CardContent>
