@@ -179,16 +179,14 @@ export const Releases: React.FC = () => {
             <CardContent className="p-6">
               <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">Plastic Cuppa Fall</h3>
               <iframe
-                data-testid="embed-iframe" 
-                style={{ borderRadius: '12px', width: '100%' }} 
-                src="https://open.spotify.com/embed/album/56DFiwDg7cMfJS3kSk1eBg?utm_source=generator" 
-                height="380" 
-                frameBorder="0" 
-                allowFullScreen 
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                loading="lazy"
-                title="Plastic Cuppa Fall by Shannon McHarg"
-              />
+                data-testid="embed-iframe"
+                style={{ border: 0, width: '100%', height: '780px' }}
+                src="https://bandcamp.com/EmbeddedPlayer/album=543644240/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/"
+                seamless
+                title="Plastic Cuppa Fall by Shannon McHarg on Bandcamp"
+              >
+                <a href="https://shannonmcharg.bandcamp.com/album/plastic-cuppa-fall">Plastic Cuppa Fall by Shannon McHarg</a>
+              </iframe>
               <div className="flex flex-col gap-2 mt-3">
                 <a
                   href="https://www.musixmatch.com/album/Shannon-McHarg/Plastic-Cuppa-Fall-Single"
