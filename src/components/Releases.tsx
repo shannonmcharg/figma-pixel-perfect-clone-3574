@@ -139,6 +139,12 @@ export const Releases: React.FC = () => {
           <Card className="border border-border shadow-sm" style={{ backgroundColor: '#34545B' }}>
             <CardContent className="p-6">
               <h3 className="text-white text-xl sm:text-2xl font-semibold mb-4 text-left">Forked</h3>
+              <div className="mb-4">
+                <a href="https://www.musixmatch.com/album/Shannon-McHarg-1/Forked" target="_blank" rel="noopener noreferrer" className="text-white hover:underline text-sm lowercase flex items-center gap-1">
+                  <img src="/musixmatch-logo.png" alt="Musixmatch" className="w-4 h-4" />
+                  lyrics
+                </a>
+              </div>
               <div className="flex justify-center">
                 <iframe
                   src="https://show.co/social-unlock/7GwpUDGne8qEwx0oWq9CBw/widget"
