@@ -136,6 +136,22 @@ export const Releases: React.FC = () => {
             </CardContent>
           </Card>
 
+          <Card className="border border-border shadow-sm" style={{ backgroundColor: '#1DB954' }}>
+            <CardContent className="p-6">
+              <h3 className="text-white text-xl sm:text-2xl font-semibold mb-4 text-left">Forked</h3>
+              <p className="text-white text-sm mb-4">Coming soon! Pre-save now on Spotify.</p>
+              <div className="flex justify-center">
+                <iframe
+                  src="https://show.co/social-unlock/7GwpUDGne8qEwx0oWq9CBw/widget"
+                  width="300"
+                  height="300"
+                  frameBorder="0"
+                  title="Pre-save Forked on Spotify"
+                />
+              </div>
+            </CardContent>
+          </Card>
+
           <Card className="border border-border shadow-sm" style={{ backgroundColor: '#981D17' }}>
             <CardContent className="p-6">
               <h3 className="text-white text-xl sm:text-2xl font-semibold mb-4 text-left">Holidaze Pie</h3>
