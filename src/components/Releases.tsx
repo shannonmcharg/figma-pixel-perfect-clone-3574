@@ -162,6 +162,15 @@ export const Releases: React.FC = () => {
                   />
                   <span className="text-white text-sm font-medium">Forked lyrics</span>
                 </a>
+                <a
+                  href="https://www.youtube.com/playlist?list=PLgEDGGuOvK-kuLUlidVartJ174vCngh6r"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 hover:opacity-80 transition-opacity underline decoration-white"
+                >
+                  <Youtube className="w-6 h-6 text-white" />
+                  <span className="text-white text-sm font-medium">Forked videos</span>
+                </a>
               </div>
             </CardContent>
           </Card>
