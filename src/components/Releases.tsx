@@ -136,7 +136,7 @@ export const Releases: React.FC = () => {
             </CardContent>
           </Card>
 
-          <Card className="border border-border shadow-sm" style={{ backgroundColor: '#1DB954' }}>
+          <Card className="border border-border shadow-sm" style={{ backgroundColor: '#34545B' }}>
             <CardContent className="p-6">
               <h3 className="text-white text-xl sm:text-2xl font-semibold mb-4 text-left">Forked</h3>
               <p className="text-white text-sm mb-4">Coming soon! Pre-save now on Spotify.</p>
