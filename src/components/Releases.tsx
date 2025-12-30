@@ -139,7 +139,16 @@ export const Releases: React.FC = () => {
           <Card className="border border-border shadow-sm" style={{ backgroundColor: '#34545B' }}>
             <CardContent className="p-6">
               <h3 className="text-white text-xl sm:text-2xl font-semibold mb-4 text-left">Forked</h3>
-              <div className="flex flex-col gap-2 mb-4">
+              <div className="flex justify-center">
+                <iframe
+                  src="https://show.co/social-unlock/7GwpUDGne8qEwx0oWq9CBw/widget"
+                  width="300"
+                  height="300"
+                  frameBorder="0"
+                  title="Pre-save Forked on Spotify"
+                />
+              </div>
+              <div className="flex flex-col gap-2 mt-3">
                 <a
                   href="https://www.musixmatch.com/album/Shannon-McHarg-1/Forked"
                   target="_blank"
@@ -153,15 +162,6 @@ export const Releases: React.FC = () => {
                   />
                   <span className="text-white text-sm font-medium">Forked lyrics</span>
                 </a>
-              </div>
-              <div className="flex justify-center">
-                <iframe
-                  src="https://show.co/social-unlock/7GwpUDGne8qEwx0oWq9CBw/widget"
-                  width="300"
-                  height="300"
-                  frameBorder="0"
-                  title="Pre-save Forked on Spotify"
-                />
               </div>
             </CardContent>
           </Card>
