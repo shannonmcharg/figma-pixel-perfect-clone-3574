@@ -139,10 +139,19 @@ export const Releases: React.FC = () => {
           <Card className="border border-border shadow-sm" style={{ backgroundColor: '#34545B' }}>
             <CardContent className="p-6">
               <h3 className="text-white text-xl sm:text-2xl font-semibold mb-4 text-left">Forked</h3>
-              <div className="mb-4">
-                <a href="https://www.musixmatch.com/album/Shannon-McHarg-1/Forked" target="_blank" rel="noopener noreferrer" className="text-white hover:underline text-sm lowercase flex items-center gap-1">
-                  <img src="/musixmatch-logo.png" alt="Musixmatch" className="w-4 h-4" />
-                  lyrics
+              <div className="flex flex-col gap-2 mb-4">
+                <a
+                  href="https://www.musixmatch.com/album/Shannon-McHarg-1/Forked"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 hover:opacity-80 transition-opacity underline decoration-white"
+                >
+                  <img
+                    src={musixmatchLogo}
+                    alt="Musixmatch logo"
+                    className="w-6 h-6 object-contain brightness-0 invert"
+                  />
+                  <span className="text-white text-sm font-medium">Forked lyrics</span>
                 </a>
               </div>
               <div className="flex justify-center">
