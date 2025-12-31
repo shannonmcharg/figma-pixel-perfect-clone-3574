@@ -229,24 +229,29 @@ export const Releases: React.FC = () => {
                         style={{ backgroundColor: 'transparent' }}
                       />
                     </div>
-                    <a
-                      href={platform.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm text-foreground underline hover:opacity-80 transition-opacity"
-                    >
-                      {platform.name}
-                    </a>
-                    {platform.holidayHref && (
+                    <span className="text-sm text-foreground">
                       <a
-                        href={platform.holidayHref}
+                        href={platform.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm text-foreground underline hover:opacity-80 transition-opacity"
+                        className="underline hover:opacity-80 transition-opacity"
                       >
-                        (Holiday)
+                        {platform.name}
                       </a>
-                    )}
+                      {platform.holidayHref && (
+                        <>
+                          {' '}
+                          <a
+                            href={platform.holidayHref}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="underline hover:opacity-80 transition-opacity"
+                          >
+                            (Holiday)
+                          </a>
+                        </>
+                      )}
+                    </span>
                   </div>
                 ))}
               </div>
