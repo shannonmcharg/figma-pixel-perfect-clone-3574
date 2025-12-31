@@ -49,7 +49,8 @@ export const Releases: React.FC = () => {
       src: pandoraLogo,
       alt: "Pandora music streaming platform logo",
       href: "https://www.pandora.com/artist/shannon-mcharg/ARthXx7797ZX5fK",
-      name: "Pandora"
+      name: "Pandora",
+      holidayHref: "https://www.pandora.com/artist/shannon-mcharg-holiday/ARJz9f2z4V5P4b2"
     },
     {
       src: qobuzLogo,
@@ -219,13 +220,7 @@ export const Releases: React.FC = () => {
               
               <div className="flex flex-col gap-3 mb-4">
                 {availableNowPlatforms.map((platform, index) => (
-                  <a
-                    key={index}
-                    href={platform.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 hover:opacity-80 transition-opacity"
-                  >
+                  <div key={index} className="flex items-center gap-3">
                     <div className="relative aspect-square w-6 h-6 bg-transparent flex-shrink-0">
                       <img
                         src={platform.src}
@@ -234,8 +229,25 @@ export const Releases: React.FC = () => {
                         style={{ backgroundColor: 'transparent' }}
                       />
                     </div>
-                    <span className="text-sm text-foreground underline">{platform.name}</span>
-                  </a>
+                    <a
+                      href={platform.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-foreground underline hover:opacity-80 transition-opacity"
+                    >
+                      {platform.name}
+                    </a>
+                    {platform.holidayHref && (
+                      <a
+                        href={platform.holidayHref}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-foreground underline hover:opacity-80 transition-opacity"
+                      >
+                        (Holiday)
+                      </a>
+                    )}
+                  </div>
                 ))}
               </div>
 
