@@ -211,6 +211,21 @@ export const Releases: React.FC = () => {
             </CardContent>
           </Card>
 
+          <Card className="border border-border shadow-sm" style={{ backgroundColor: '#424F5C' }}>
+            <CardContent className="p-6">
+              <h3 className="text-white text-xl sm:text-2xl font-semibold mb-4 text-left">False Choices</h3>
+              <iframe
+                data-testid="embed-iframe"
+                style={{ border: 0, width: '100%', height: '654px' }}
+                src="https://bandcamp.com/EmbeddedPlayer/album=654472520/size=large/bgcol=ffffff/linkcol=0A5176/transparent=true/"
+                seamless
+                title="False Choices by Shannon McHarg on Bandcamp"
+              >
+                <a href="https://shannonmcharg.bandcamp.com/album/false-choices">False Choices by Shannon McHarg</a>
+              </iframe>
+            </CardContent>
+          </Card>
+
           <Card className="border border-border shadow-sm">
             <CardContent className="p-6">
               <h3 className="text-secondary text-xl sm:text-2xl font-semibold mb-4 text-left">Stream My Music</h3>
