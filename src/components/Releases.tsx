@@ -94,7 +94,7 @@ export const Releases: React.FC = () => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-0">
-          <Card className="border border-border shadow-sm" style={{ backgroundColor: '#18598C' }}>
+          <Card className="border border-border shadow-sm" style={{ backgroundColor: '#C17C15' }}>
             <CardContent className="p-6">
               <h3 className="text-white text-xl sm:text-2xl font-semibold mb-4 text-left">False Choices</h3>
               <iframe
