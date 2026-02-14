@@ -109,7 +109,7 @@ export const Releases: React.FC = () => {
             </CardContent>
           </Card>
 
-          <Card className="border border-border shadow-sm" style={{ backgroundColor: '#34545B' }}>
+          <Card className="border border-border shadow-sm" style={{ backgroundColor: '#385A61' }}>
             <CardContent className="p-6">
               <h3 className="text-white text-xl sm:text-2xl font-semibold mb-4 text-left">Forked</h3>
               <iframe
