@@ -187,7 +187,7 @@ export const Releases: React.FC = () => {
             </CardContent>
           </Card>
 
-          <Card className="border border-border shadow-sm" style={{ backgroundColor: '#8D3500' }}>
+          <Card className="border border-border shadow-sm" style={{ backgroundColor: '#C14E0B' }}>
             <CardContent className="p-6">
               <h3 className="text-white text-xl sm:text-2xl font-semibold mb-4 text-left">Plastic Cuppa Fall</h3>
               <iframe
