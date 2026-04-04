@@ -108,6 +108,19 @@ export const Releases: React.FC = () => {
               </iframe>
               <div className="flex flex-col gap-2 mt-3">
                 <a
+                  href="https://www.musixmatch.com/album/Shannon-McHarg-4/False-Choices"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 hover:opacity-80 transition-opacity underline decoration-white"
+                >
+                  <img
+                    src={musixmatchLogo}
+                    alt="Musixmatch logo"
+                    className="w-6 h-6 object-contain brightness-0 invert"
+                  />
+                  <span className="text-white text-sm font-medium">False Choices lyrics</span>
+                </a>
+                <a
                   href="https://www.youtube.com/playlist?list=PLgEDGGuOvK-moJ1Q3keeS7EcaO37Q_lmb"
                   target="_blank"
                   rel="noopener noreferrer"
