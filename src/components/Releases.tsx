@@ -60,6 +60,12 @@ export const Releases: React.FC = () => {
       name: "Qobuz"
     },
     {
+      src: soundcloudLogo,
+      alt: "SoundCloud music streaming platform logo",
+      href: "https://soundcloud.com/shannon-mcharg-songwriter",
+      name: "SoundCloud"
+    },
+    {
       src: spotifyLogo,
       alt: "Spotify music streaming platform logo",
       href: "https://open.spotify.com/artist/6JUDGvBQiLagw4rt8Gb9ct?si=BUe2A0UGQYmeuY00msZWhQ",
