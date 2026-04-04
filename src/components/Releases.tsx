@@ -12,6 +12,7 @@ import pandoraLogo from '@/assets/pandora-logo.png';
 import deezerLogo from '@/assets/deezer-logo.png';
 import iheartradioLogo from '@/assets/iheartradio-logo.png';
 import qobuzLogo from '@/assets/qobuz-logo.png';
+import soundcloudLogo from '@/assets/soundcloud-logo.png';
 
 export const Releases: React.FC = () => {
   const availableNowPlatforms = [
