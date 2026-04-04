@@ -12,6 +12,7 @@ import pandoraLogo from '@/assets/pandora-logo.png';
 import deezerLogo from '@/assets/deezer-logo.png';
 import iheartradioLogo from '@/assets/iheartradio-logo.png';
 import qobuzLogo from '@/assets/qobuz-logo.png';
+import soundcloudLogo from '@/assets/soundcloud-logo.png';
 
 export const Releases: React.FC = () => {
   const availableNowPlatforms = [
@@ -57,6 +58,12 @@ export const Releases: React.FC = () => {
       alt: "Qobuz music streaming platform logo",
       href: "https://play.qobuz.com/artist/28857460",
       name: "Qobuz"
+    },
+    {
+      src: soundcloudLogo,
+      alt: "SoundCloud music streaming platform logo",
+      href: "https://soundcloud.com/shannon-mcharg-songwriter",
+      name: "SoundCloud"
     },
     {
       src: spotifyLogo,
