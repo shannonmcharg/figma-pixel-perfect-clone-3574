@@ -101,6 +101,21 @@ export const Releases: React.FC = () => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-0">
+          <Card className="border border-border shadow-sm" style={{ backgroundColor: '#4A2D5E' }}>
+            <CardContent className="p-6">
+              <h3 className="text-white text-xl sm:text-2xl font-semibold mb-4 text-left">Consumed</h3>
+              <iframe
+                data-testid="embed-iframe"
+                style={{ border: 0, width: '100%', height: '654px' }}
+                src="https://bandcamp.com/EmbeddedPlayer/album=128905846/size=large/bgcol=ffffff/linkcol=0A5176/transparent=true/"
+                seamless
+                title="Consumed by Shannon McHarg on Bandcamp"
+              >
+                <a href="https://shannonmcharg.bandcamp.com/album/consumed">Consumed by Shannon McHarg</a>
+              </iframe>
+            </CardContent>
+          </Card>
+
           <Card className="border border-border shadow-sm" style={{ backgroundColor: '#1E7AB3' }}>
             <CardContent className="p-6">
               <h3 className="text-white text-xl sm:text-2xl font-semibold mb-4 text-left">False Choices</h3>
@@ -254,21 +269,6 @@ export const Releases: React.FC = () => {
                   <span className="text-white text-sm font-medium">Plastic Cuppa Fall videos</span>
                 </a>
               </div>
-            </CardContent>
-          </Card>
-
-          <Card className="border border-border shadow-sm" style={{ backgroundColor: '#4A2D5E' }}>
-            <CardContent className="p-6">
-              <h3 className="text-white text-xl sm:text-2xl font-semibold mb-4 text-left">Consumed</h3>
-              <iframe
-                data-testid="embed-iframe"
-                style={{ border: 0, width: '100%', height: '654px' }}
-                src="https://bandcamp.com/EmbeddedPlayer/album=128905846/size=large/bgcol=ffffff/linkcol=0A5176/transparent=true/"
-                seamless
-                title="Consumed by Shannon McHarg on Bandcamp"
-              >
-                <a href="https://shannonmcharg.bandcamp.com/album/consumed">Consumed by Shannon McHarg</a>
-              </iframe>
             </CardContent>
           </Card>
 
