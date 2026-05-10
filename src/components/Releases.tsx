@@ -113,6 +113,17 @@ export const Releases: React.FC = () => {
               >
                 <a href="https://shannonmcharg.bandcamp.com/album/consumed">Consumed by Shannon McHarg</a>
               </iframe>
+              <div className="flex flex-col gap-2 mt-3">
+                <a
+                  href="https://www.youtube.com/playlist?list=PLgEDGGuOvK-nok7dkRCoQn04F7TzMd9fA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 hover:opacity-80 transition-opacity underline decoration-white"
+                >
+                  <Youtube className="w-6 h-6 text-white" />
+                  <span className="text-white text-sm font-medium">Consumed videos</span>
+                </a>
+              </div>
             </CardContent>
           </Card>
 
