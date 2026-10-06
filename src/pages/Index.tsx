@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Header } from '@/components/Header';
 import { Releases } from '@/components/Releases';
+import { Newsletter } from '@/components/Newsletter';
 import { About } from '@/components/About';
 import { OpenMics } from '@/components/OpenMics';
 import { Footer } from '@/components/Footer';
@@ -11,6 +12,7 @@ const Index = () => {
   useEffect(() => {
     const sections = [
       { id: 'releases', name: 'Music' },
+      { id: 'newsletter', name: 'Newsletter' },
       { id: 'about', name: 'About' },
       { id: 'open-mics', name: 'Open Mics' }
     ];
@@ -110,6 +112,7 @@ const Index = () => {
       <Header activeSection={activeSection} />
       <main className="space-y-0">
         <Releases />
+        <Newsletter />
         <About />
         <OpenMics />
       </main>

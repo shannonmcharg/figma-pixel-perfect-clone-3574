@@ -7,6 +7,7 @@ interface HeaderProps {
 export const Header: React.FC<HeaderProps> = ({ activeSection = 'About' }) => {
   const navigationItems = [
     { name: 'Music', href: '#releases' },
+    { name: 'Newsletter', href: '#newsletter' },
     { name: 'About', href: '#about' },
     { name: 'Open Mics', href: '#open-mics' }
   ];
@@ -31,7 +32,7 @@ export const Header: React.FC<HeaderProps> = ({ activeSection = 'About' }) => {
           </h1>
         </div>
 
-        <nav className="flex items-center justify-center lg:justify-start gap-1 w-full lg:w-auto lg:ml-auto order-3 lg:order-3" aria-label="Main navigation">
+        <nav className="flex flex-wrap items-center justify-center lg:justify-start gap-1 w-full lg:w-auto lg:ml-auto order-3 lg:order-3" aria-label="Main navigation">
           {navigationItems.map((item) => (
             <a
               key={item.name}
