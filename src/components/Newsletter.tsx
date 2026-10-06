@@ -38,9 +38,9 @@ export const Newsletter: React.FC = () => (
         <div className="min-w-0">
           <h3 className="text-secondary text-xl font-semibold mb-3">Sign up</h3>
           <iframe
-            src="https://buttondown.com/shannonmchargsongs"
+            src="https://buttondown.com/shannonmchargsongs?as_embed=true"
             title="Sign up for Shannon McHarg’s newsletter"
-            className="w-full h-[600px] border-0 bg-background"
+            className="w-full h-[450px] border-0 bg-background"
             loading="lazy"
           />
           <a
