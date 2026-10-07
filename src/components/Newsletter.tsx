@@ -1,3 +1,5 @@
+// Newsletter section: opens on the latest issue via the latest-newsletter
+// edge function, falling back to the Buttondown archive list.
 import React, { useEffect, useState } from 'react';
 import { ExternalLink } from 'lucide-react';
 import { supabase } from '@/integrations/supabase/client';
